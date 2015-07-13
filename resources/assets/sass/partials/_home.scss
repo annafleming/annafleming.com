@@ -1,0 +1,219 @@
+article.slogan-block{
+    width: 100%;
+    padding: 100px 6.4% 70px 5.8%;
+    background: #83b9dc;
+    background: repeating-linear-gradient(
+                    61deg,
+                    #7aacce,
+                    #83b9dc 48%
+    );
+    div.slogan {
+        min-height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        width: 45%;
+        color: #34495e;
+        div.slogan-head{
+            text-transform: uppercase;
+            font-size: 2.5em;
+            line-height: 1em;
+            font-family: SerifGotic;
+            em {
+                font-family: SerifGoticBlack;
+                font-size: 2em;
+                line-height: 0.8em;
+                font-style: normal;
+            }
+            div.sl-ln2{
+                margin-top: 0.8em;
+                margin-left: 5.5%;
+                div.p1, div.p2{
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                div.p1{
+                    margin-right: 0.5em;
+                }
+            }
+        }
+        div.slogan-text {
+            margin-left: 5.5%;
+            margin-top: 1.75em;
+            font-size: 1.25em;
+            font-family: ProximaNovaLight;
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+    }
+    div.banner{
+        display: inline-block;
+        vertical-align: top;
+        min-height: 100%;
+        width: 53.78%;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+aside.about-me{
+    margin: 15px auto 85px;
+    max-width: 970px;
+    padding: 5%;
+    background-color: #e1a850;
+    div.about-me-head{
+        margin-bottom: 115px;
+        position: relative;
+        width: 100%;
+        float: left;
+        h2 {
+            font-size: 2.5em;
+            line-height: 1.2em;
+            font-family: SerifGotic;
+            text-transform: uppercase;
+            position: absolute;
+            top: 83px;
+            left: 0px;
+            span {
+                display: block;
+            }
+        }
+        div.about-me-map{
+            float: right;
+            width: 60%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
+    div.about-me-block{
+        div.about-me-photo{
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            width: 40%;
+            margin-right: 3%;
+            img{
+                width: 100%;
+                max-width: 395px;
+            }
+        }
+        div.about-me-text{
+            display: inline-block;
+            vertical-align: top;
+            width: 56%;
+            font-family: ProximaNovaLight;
+            h3{
+                margin: 0;
+                font-size: 1.6em;
+                margin-bottom: 0.3em;
+            }
+            p {
+                margin: 0;
+                font-size: 1.15em;
+                line-height: 1.2em;
+            }
+
+        }
+    }
+}
+
+@mixin home-max-width-1100 {
+    article.slogan-block {
+        div.slogan {
+            div.slogan-head {
+                font-size: 2em;
+            }
+            div.slogan-text {
+                font-size: 0.8em;
+            }
+        }
+    }
+    aside.about-me{
+        div.about-me-block {
+            font-size: 0.9em;
+        }
+    }
+}
+
+@mixin home-max-width-990 {
+    aside.about-me{
+        div.about-me-block{
+            div.about-me-photo{
+                width: 100%;
+            }
+            div.about-me-text{
+                margin-top: 20px;
+                width: 100%;
+                h3{
+                    text-align: center;
+                }
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+@mixin home-max-width-900 {
+    article.slogan-block {
+        div.slogan {
+            div.slogan-head {
+                font-size: 1.5em;
+            }
+        }
+    }
+    aside.about-me{
+        div.about-me-head{
+            h2{
+                font-size: 2.2em;
+
+            }
+        }
+    }
+}
+
+@mixin home-max-width-790 {
+    aside.about-me{
+        div.about-me-head{
+            h2{
+                font-size: 1.8em;
+            }
+        }
+    }
+}
+
+@mixin home-max-width-665 {
+    article.slogan-block {
+        div.slogan {
+            width: 100%;
+            div.slogan-text {
+                float: right;
+                margin-bottom: 10px;
+            }
+        }
+        div.banner{
+            width: 100%;
+        }
+    }
+    aside.about-me{
+        div.about-me-head {
+            h2 {
+                position: static;
+                font-size: 1.2em;
+                text-align: center;
+                margin-bottom: 10px;
+                span {
+                    display: inline-block;
+                }
+            }
+            div.about-me-map {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,208 @@
+section.works{
+    color: #34495e;
+    header{
+        background: #83b9dc;
+        background: repeating-linear-gradient(
+                        62deg,
+                        #7aacce,
+                        #83b9dc 50%
+        );
+        font-size: 5.83em;
+        height: 2em;
+        display: table;
+        width: 100%;
+        h1{
+            display: table-cell;
+            width: 100%;
+            text-align: center;
+            vertical-align: middle;
+            margin: auto;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: SerifGoticBlack;
+            font-size: 1em;
+            span{
+                font-family: SerifGotic;
+                font-size: 0.43em;
+            }
+        }
+    }
+    div.works-list{
+        width: 100%;
+        padding: 0 17% 170px 17%;
+        text-align: justify;
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+
+        article{
+            margin-top: 170px;
+            display: inline-block;
+            vertical-align: top;
+            width: 47%;
+
+            font-family: ProximaNovaLight;
+            color: #000000;
+            position: relative;
+
+            div.work-head{
+                position: absolute;
+                top: -1em;
+                left: 0;
+                text-transform: lowercase;
+                font-size: 2em;
+                line-height: 1em;
+                height: 1em;
+                background-color: #6f9dbb;
+                width: 100%;
+                text-align: center;
+                cursor: pointer;
+            }
+            img {
+                display: block;
+                width: 100% !important;
+                height: auto !important;
+            }
+            div.work-info{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                overflow-y: scroll;
+                background-color: #9ac6e3;
+                font-size: 1em;
+                line-height: 0.9em;
+                padding: 30px 4.7%;
+            }
+
+        }
+    }
+}
+
+@mixin works-max-width-1500 {
+    section.works{
+        div.works-list{
+            article{
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@mixin works-max-width-1250 {
+    section.works{
+        div.works-list{
+            article{
+                width: 370px;
+                height: 370px;
+            }
+        }
+    }
+}
+
+@mixin works-max-width-1150 {
+    section.works{
+        div.works-list{
+            article{
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }
+}
+
+@mixin works-max-width-1100 {
+    section.works{
+        header{
+            font-size: 5em;
+        }
+        div.works-list{
+            padding-left: 13%;
+            padding-right: 13%;
+        }
+    }
+}
+
+@mixin works-max-width-990 {
+    section.works{
+        header{
+            font-size: 4em;
+        }
+        div.works-list{
+            padding-left: 9%;
+            padding-right: 9%;
+        }
+    }
+}
+
+@mixin works-max-width-900 {
+    section.works{
+        header{
+            font-size: 3em;
+        }
+        div.works-list{
+            padding-left: 5%;
+            padding-right: 5%;
+            article{
+                width: 320px;
+                height: 320px;
+            }
+        }
+    }
+}
+
+@mixin works-max-width-790 {
+    section.works{
+        div.works-list{
+            padding-left: 4%;
+            padding-right: 4%;
+            article{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@mixin works-max-width-665 {
+    section.works{
+        div.works-list{
+            article{
+                display: block;
+                width: 360px;
+                height: 360px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@mixin works-max-width-399 {
+    section.works{
+        div.works-list{
+            article{
+                display: block;
+                width: 300px;
+                height: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@mixin works-min-width-1500 {
+    section.works{
+        div.works-list{
+            article{
+                width: 480px;
+                height: 480px;
+            }
+        }
+    }
+}

@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "ProximaNovaThin";
+  src: url("fonts/ProximaNova-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: url("fonts/ProximaNova-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SerifGotic";
+  src: url("fonts/itc-serif-gothic-lt-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SerifGoticBlack";
+  src: url("fonts/itc-serif-gothic-lt-black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+html {
+  position: relative;
+  height: 100%;
+  font-family: ProximaNovaLight Helvetica sans-serif;
+  font-size: 24px; }
+  html body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%; }
+    html body h1, html body h2, html body h3, html body h4 {
+      font-size: 1em;
+      margin: 0; }
+    html body a {
+      text-decoration: none; }
+    html body .headerBlock {
+      height: 115px;
+      background-color: #535b5c;
+      padding-left: 6%;
+      padding-right: 17%; }
+    html body footer.headerBlock {
+      position: relative;
+      margin-top: -115px;
+      height: 115px;
+      clear: both; }
+    html body main {
+      background-color: #e1a850;
+      height: auto;
+      min-height: 100%;
+      padding-bottom: 115px; }
+
+nav {
+  float: right;
+  width: 62%;
+  text-align: right;
+  margin-top: 37px; }
+  nav a {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-left: 13%;
+    color: #83b9dc;
+    font-size: 1em;
+    line-height: 1em;
+    font-family: ProximaNovaThin;
+    color: #83b9dc; }
+    nav a.active {
+      color: #e1a850; }
+      nav a.active:hover {
+        color: #e1a850; }
+    nav a:first-child {
+      margin-left: 0; }
+    nav a:hover {
+      color: #83b9dc;
+      text-decoration: underline; }
+
+article.slogan-block {
+  width: 100%;
+  padding: 100px 6.4% 70px 5.8%;
+  background: #83b9dc;
+  background: repeating-linear-gradient(61deg, #7aacce, #83b9dc 48%); }
+  article.slogan-block div.slogan {
+    min-height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    color: #34495e; }
+    article.slogan-block div.slogan div.slogan-head {
+      text-transform: uppercase;
+      font-size: 2.5em;
+      line-height: 1em;
+      font-family: SerifGotic; }
+      article.slogan-block div.slogan div.slogan-head em {
+        font-family: SerifGoticBlack;
+        font-size: 2em;
+        line-height: 0.8em;
+        font-style: normal; }
+      article.slogan-block div.slogan div.slogan-head div.sl-ln2 {
+        margin-top: 0.8em;
+        margin-left: 5.5%; }
+        article.slogan-block div.slogan div.slogan-head div.sl-ln2 div.p1, article.slogan-block div.slogan div.slogan-head div.sl-ln2 div.p2 {
+          display: inline-block;
+          vertical-align: top; }
+        article.slogan-block div.slogan div.slogan-head div.sl-ln2 div.p1 {
+          margin-right: 0.5em; }
+    article.slogan-block div.slogan div.slogan-text {
+      margin-left: 5.5%;
+      margin-top: 1.75em;
+      font-size: 1.25em;
+      font-family: ProximaNovaLight;
+      line-height: 1em;
+      text-transform: uppercase; }
+  article.slogan-block div.banner {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 100%;
+    width: 53.78%; }
+    article.slogan-block div.banner img {
+      max-width: 100%; }
+
+aside.about-me {
+  margin: 15px auto 85px;
+  max-width: 970px;
+  padding: 5%;
+  background-color: #e1a850; }
+  aside.about-me div.about-me-head {
+    margin-bottom: 115px;
+    position: relative;
+    width: 100%;
+    float: left; }
+    aside.about-me div.about-me-head h2 {
+      font-size: 2.5em;
+      line-height: 1.2em;
+      font-family: SerifGotic;
+      text-transform: uppercase;
+      position: absolute;
+      top: 83px;
+      left: 0px; }
+      aside.about-me div.about-me-head h2 span {
+        display: block; }
+    aside.about-me div.about-me-head div.about-me-map {
+      float: right;
+      width: 60%; }
+      aside.about-me div.about-me-head div.about-me-map img {
+        width: 100%; }
+  aside.about-me div.about-me-block div.about-me-photo {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 40%;
+    margin-right: 3%; }
+    aside.about-me div.about-me-block div.about-me-photo img {
+      width: 100%;
+      max-width: 395px; }
+  aside.about-me div.about-me-block div.about-me-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 56%;
+    font-family: ProximaNovaLight; }
+    aside.about-me div.about-me-block div.about-me-text h3 {
+      margin: 0;
+      font-size: 1.6em;
+      margin-bottom: 0.3em; }
+    aside.about-me div.about-me-block div.about-me-text p {
+      margin: 0;
+      font-size: 1.15em;
+      line-height: 1.2em; }
+
+section.works {
+  color: #34495e; }
+  section.works header {
+    background: #83b9dc;
+    background: repeating-linear-gradient(62deg, #7aacce, #83b9dc 50%);
+    font-size: 5.83em;
+    height: 2em;
+    display: table;
+    width: 100%; }
+    section.works header h1 {
+      display: table-cell;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+      margin: auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: SerifGoticBlack;
+      font-size: 1em; }
+      section.works header h1 span {
+        font-family: SerifGotic;
+        font-size: 0.43em; }
+  section.works div.works-list {
+    width: 100%;
+    padding: 0 17% 170px 17%;
+    text-align: justify; }
+    section.works div.works-list:after {
+      content: "";
+      display: inline-block;
+      width: 100%; }
+    section.works div.works-list article {
+      margin-top: 170px;
+      display: inline-block;
+      vertical-align: top;
+      width: 47%;
+      font-family: ProximaNovaLight;
+      color: #000000;
+      position: relative; }
+      section.works div.works-list article div.work-head {
+        position: absolute;
+        top: -1em;
+        left: 0;
+        text-transform: lowercase;
+        font-size: 2em;
+        line-height: 1em;
+        height: 1em;
+        background-color: #6f9dbb;
+        width: 100%;
+        text-align: center;
+        cursor: pointer; }
+      section.works div.works-list article img {
+        display: block;
+        width: 100% !important;
+        height: auto !important; }
+      section.works div.works-list article div.work-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        background-color: #9ac6e3;
+        font-size: 1em;
+        line-height: 0.9em;
+        padding: 30px 4.7%; }
+
+div#adminPanel {
+  font-size: 0.75em;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 10px;
+  background-color: #83b9dc; }
+
+div.container-fluid {
+  padding-top: 20px; }
+
+div.adminBlock {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 0.75em; }
+  div.adminBlock h1 {
+    font-size: 2em;
+    margin: 20px 0; }
+  div.adminBlock table {
+    background-color: lightblue;
+    margin-top: 20px; }
+  div.adminBlock form {
+    background-color: lightblue; }
+
+@media (max-width: 1500px) {
+  html body section.works div.works-list article {
+    width: 400px;
+    height: 400px; } }
+
+@media (max-width: 1250px) {
+  html body section.works div.works-list article {
+    width: 370px;
+    height: 370px; } }
+
+@media (max-width: 1150px) {
+  html body section.works div.works-list article {
+    width: 350px;
+    height: 350px; } }
+
+@media (max-width: 1100px) {
+  html body article.slogan-block div.slogan div.slogan-head {
+    font-size: 2em; }
+  html body article.slogan-block div.slogan div.slogan-text {
+    font-size: 0.8em; }
+  html body aside.about-me div.about-me-block {
+    font-size: 0.9em; }
+  html body section.works header {
+    font-size: 5em; }
+  html body section.works div.works-list {
+    padding-left: 13%;
+    padding-right: 13%; } }
+
+@media (max-width: 990px) {
+  html body aside.about-me div.about-me-block div.about-me-photo {
+    width: 100%; }
+  html body aside.about-me div.about-me-block div.about-me-text {
+    margin-top: 20px;
+    width: 100%; }
+    html body aside.about-me div.about-me-block div.about-me-text h3 {
+      text-align: center; }
+    html body aside.about-me div.about-me-block div.about-me-text p {
+      text-align: justify; }
+  html body section.works header {
+    font-size: 4em; }
+  html body section.works div.works-list {
+    padding-left: 9%;
+    padding-right: 9%; } }
+
+@media (max-width: 900px) {
+  html body article.slogan-block div.slogan div.slogan-head {
+    font-size: 1.5em; }
+  html body aside.about-me div.about-me-head h2 {
+    font-size: 2.2em; }
+  html body section.works header {
+    font-size: 3em; }
+  html body section.works div.works-list {
+    padding-left: 5%;
+    padding-right: 5%; }
+    html body section.works div.works-list article {
+      width: 320px;
+      height: 320px; } }
+
+@media (max-width: 790px) {
+  html body section.works div.works-list {
+    padding-left: 4%;
+    padding-right: 4%; }
+    html body section.works div.works-list article {
+      width: 300px;
+      height: 300px; }
+  html body section.works div.works-list {
+    padding-left: 4%;
+    padding-right: 4%; }
+    html body section.works div.works-list article {
+      width: 300px;
+      height: 300px; } }
+
+@media (max-width: 665px) {
+  html body .headerBlock {
+    text-align: center;
+    padding: 0;
+    height: 172.5px; }
+    html body .headerBlock nav {
+      float: none;
+      text-align: center;
+      width: 100%;
+      margin-top: 5px; }
+  html body footer.headerBlock {
+    margin-top: -172.5px;
+    height: 172.5px; }
+  html body main {
+    padding-bottom: 172.5px; }
+  html body article.slogan-block div.slogan {
+    width: 100%; }
+    html body article.slogan-block div.slogan div.slogan-text {
+      float: right;
+      margin-bottom: 10px; }
+  html body article.slogan-block div.banner {
+    width: 100%; }
+  html body aside.about-me div.about-me-head h2 {
+    position: static;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px; }
+    html body aside.about-me div.about-me-head h2 span {
+      display: inline-block; }
+  html body aside.about-me div.about-me-head div.about-me-map {
+    float: none;
+    text-align: center;
+    width: 100%; }
+  html body section.works div.works-list article {
+    display: block;
+    width: 360px;
+    height: 360px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 399px) {
+  html body section.works div.works-list article {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (min-width: 1500px) {
+  html body section.works div.works-list article {
+    width: 480px;
+    height: 480px; } }
+
+/*# sourceMappingURL=app.css.map */

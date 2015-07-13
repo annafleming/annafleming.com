@@ -1,0 +1,74 @@
+@import "partials/fonts";
+@import "partials/colors";
+
+$hfHeight : 115px;
+
+
+html {
+    position: relative;
+    height: 100%;
+    font-family: ProximaNovaLight Helvetica sans-serif;
+    font-size: 24px;
+    body {
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+        h1, h2, h3, h4{
+            font-size: 1em;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        .headerBlock {
+            height: $hfHeight;
+            background-color: #535b5c;
+            padding-left: 6%;
+            padding-right: 17%;
+        }
+        footer.headerBlock {
+            position: relative;
+            margin-top: -$hfHeight;
+            height: $hfHeight;
+            clear: both;
+        }
+        main {
+            background-color: #e1a850;
+            height: auto;
+            min-height: 100%;
+            padding-bottom: $hfHeight;
+        }
+    }
+}
+
+@mixin app-max-width-665 {
+    .headerBlock{
+        text-align: center;
+        padding: 0;
+        height: $hfHeight * 1.5;
+        nav {
+            float: none;
+            text-align: center;
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+    footer.headerBlock {
+        margin-top: -$hfHeight*1.5;
+        height: $hfHeight*1.5;
+    }
+    main {
+        padding-bottom: $hfHeight*1.5;
+    }
+}
+
+@import "partials/nav";
+@import "partials/home";
+@import "partials/works";
+@import "partials/admin";
+@import "partials/responsive";
+
+
+
+
+

@@ -1,0 +1,30 @@
+div#adminPanel {
+    font-size: 0.75em;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+    background: {
+        color: #83b9dc;
+    };
+}
+div.container-fluid{
+    padding-top: 20px;
+}
+div.adminBlock{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 0.75em;
+    h1{
+        font-size: 2em;
+        margin: 20px 0;
+    }
+    table{
+        background-color: lightblue;
+        margin-top: 20px;
+    }
+    form{
+        background-color: lightblue;
+    }
+}
