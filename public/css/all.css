@@ -56,6 +56,9 @@ html {
       height: auto;
       min-height: 100%;
       padding-bottom: 115px; }
+      html body main label {
+        font-weight: normal;
+        margin: 0; }
 
 nav {
   float: right;
@@ -264,6 +267,94 @@ div.adminBlock {
     margin-top: 20px; }
   div.adminBlock form {
     background-color: lightblue; }
+
+section.contact {
+  color: #34495e; }
+  section.contact header {
+    background: #83b9dc;
+    background: repeating-linear-gradient(62deg, #7aacce, #83b9dc 50%);
+    font-size: 5.83em;
+    height: 2em;
+    display: table;
+    width: 100%; }
+    section.contact header h1 {
+      display: table-cell;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+      margin: auto;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: SerifGoticBlack;
+      font-size: 1em; }
+      section.contact header h1 span {
+        font-family: SerifGotic;
+        font-size: 0.43em;
+        margin-right: -23px; }
+  section.contact div.contact-body {
+    width: 100%;
+    padding: 200px 17% 170px 17%;
+    font-size: 3em; }
+    section.contact div.contact-body h2 {
+      font-size: 1em;
+      font-family: SerifGotic;
+      text-transform: uppercase;
+      width: 27.27%;
+      line-height: 1.18em;
+      display: inline-block;
+      vertical-align: top; }
+      section.contact div.contact-body h2 span {
+        font-family: SerifGoticBlack; }
+    section.contact div.contact-body div.contact-form {
+      display: inline-block;
+      width: 60.1%;
+      min-height: 965px;
+      vertical-align: top;
+      margin-top: 1.18em;
+      position: relative; }
+      section.contact div.contact-body div.contact-form div.form-block {
+        width: 71.43%;
+        height: 625px;
+        background-color: #7aacce;
+        border: 9px solid #6e9bba;
+        position: absolute;
+        padding: 0 2.15%; }
+        section.contact div.contact-body div.contact-form div.form-block label {
+          font-size: 1em;
+          line-height: 1em;
+          height: 1em;
+          font-family: SerifGoticBlack;
+          text-transform: uppercase;
+          width: 100%; }
+          section.contact div.contact-body div.contact-form div.form-block label span {
+            font-size: 0.41em;
+            font-family: SerifGotic;
+            line-height: 1em; }
+        section.contact div.contact-body div.contact-form div.form-block input {
+          font-size: 0.39em;
+          font-family: ProximaNovaThin;
+          background-color: #a9cadf;
+          color: #424344;
+          border: none;
+          float: right;
+          width: 92%; }
+        section.contact div.contact-body div.contact-form div.form-block textarea {
+          font-size: 0.39em;
+          font-family: ProximaNovaThin;
+          background-color: #a9cadf;
+          color: #424344;
+          border: none;
+          float: right;
+          width: 92%; }
+        section.contact div.contact-body div.contact-form div.form-block.email-block {
+          top: 0;
+          right: 0; }
+        section.contact div.contact-body div.contact-form div.form-block.subject-block {
+          top: 2.38em;
+          right: 1.18em; }
+        section.contact div.contact-body div.contact-form div.form-block.message-block {
+          top: 4.76em;
+          left: 0; }
 
 @media (max-width: 1500px) {
   html body section.works div.works-list article {

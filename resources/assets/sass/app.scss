@@ -37,6 +37,10 @@ html {
             height: auto;
             min-height: 100%;
             padding-bottom: $hfHeight;
+            label{
+                font-weight: normal;
+                margin: 0;
+            }
         }
     }
 }
@@ -66,6 +70,7 @@ html {
 @import "partials/home";
 @import "partials/works";
 @import "partials/admin";
+@import "partials/contact";
 @import "partials/responsive";
 
 
