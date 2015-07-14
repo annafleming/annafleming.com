@@ -277,7 +277,6 @@ section.contact {
       width: 100%;
       text-align: center;
       vertical-align: middle;
-      margin: auto;
       text-transform: uppercase;
       text-align: center;
       font-family: SerifGoticBlack;
@@ -297,7 +296,8 @@ section.contact {
       width: 27.27%;
       line-height: 1.18em;
       display: inline-block;
-      vertical-align: top; }
+      vertical-align: top;
+      margin-right: -0.8em; }
       section.contact div.contact-body h2 span {
         font-family: SerifGoticBlack; }
     section.contact div.contact-body div.contact-form {
@@ -362,6 +362,21 @@ section.contact {
           width: 100%;
           height: 100%;
           position: relative; }
+  section.contact input.contact-submit {
+    display: inline-block;
+    background-color: #c06b62;
+    background: repeating-radial-gradient(circle, #c06b62, #c06b62 51px, #ad6058 24px, #ad6058 56px);
+    font-size: 0.67em;
+    font-family: SerifGotic;
+    text-transform: uppercase;
+    width: 4.6875em;
+    height: 4.6875em;
+    margin-left: -1.8615em;
+    margin-bottom: -2.34375em;
+    vertical-align: bottom;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 0.167em solid #9a564e; }
 
 @media (max-width: 1500px) {
   html body section.works div.works-list article {

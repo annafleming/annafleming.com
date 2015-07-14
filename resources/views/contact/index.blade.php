@@ -9,7 +9,6 @@
         <div class="contact-body">
             <h2><span>Make</span> your calling card</h2>
             <div class="contact-form">
-
                 <div class="form-block email-block">
                     <div class="form-block-inside">
                         <label for="email">E<span>mail</span></label>
@@ -32,6 +31,8 @@
                     </div>
                 </div>
             </div>
+
+            {!! Form::submit('Send', ['class' => 'contact-submit']) !!}
         </div>
         {!! Form::close() !!}
     </section>

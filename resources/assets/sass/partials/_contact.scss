@@ -16,7 +16,6 @@ section.contact{
             width: 100%;
             text-align: center;
             vertical-align: middle;
-            margin: auto;
             text-transform: uppercase;
             text-align: center;
             font-family: SerifGoticBlack;
@@ -43,6 +42,7 @@ section.contact{
             span{
                 font-family: SerifGoticBlack;
             }
+            margin-right: -0.8em;
         }
         div.contact-form{
             display: inline-block;
@@ -102,7 +102,6 @@ section.contact{
                 &.email-block{
                     top: 0;
                     right: 0;
-
                 }
                 &.subject-block{
                     top: 2.38em;
@@ -119,5 +118,27 @@ section.contact{
                 }
             }
         }
+    }
+    input.contact-submit{
+        display: inline-block;
+        background-color: #c06b62;
+        background: repeating-radial-gradient(
+                        circle,
+                        #c06b62,
+                        #c06b62 51px,
+                        #ad6058 24px,
+                        #ad6058 56px
+        );
+        font-size: 0.67em;
+        font-family: SerifGotic;
+        text-transform: uppercase;
+        width: 4.6875em;
+        height: 4.6875em;
+        margin-left: -1.8615em;
+        margin-bottom: -2.34375em;
+        vertical-align: bottom;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 0.167em solid #9a564e;
     }
 }
