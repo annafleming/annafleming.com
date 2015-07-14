@@ -11,16 +11,25 @@
             <div class="contact-form">
 
                 <div class="form-block email-block">
-                    <label for="email">E<span>mail</span></label>
-                    {!! Form::email('email', null, ['placeholder' => 'theDude@email.com']) !!}
+                    <div class="form-block-inside">
+                        <label for="email">E<span>mail</span></label>
+                        {!! Form::email('email', null, ['placeholder' => 'theDude@email.com']) !!}
+                        <label class="upsidedown" for="email">E<span>mail</span></label>
+                    </div>
                 </div>
                 <div class="form-block subject-block">
-                    <label for="subject">S<span>ubject</span></label>
-                    {!! Form::text('subject', null, ['placeholder' => 'You’re magical']) !!}
+                    <div class="form-block-inside">
+                        <label for="subject">S<span>ubject</span></label>
+                        {!! Form::text('subject', null, ['placeholder' => 'You’re magical']) !!}
+                        <label class="upsidedown" for="subject">S<span>ubject</span></label>
+                    </div>
                 </div>
                 <div class="form-block message-block">
-                    <label for="message">M<span>essage</span></label>
-                    {!! Form::textarea('message', null, ['placeholder' => 'What do you have to say?']) !!}
+                    <div class="form-block-inside">
+                        <label for="message">M<span>essage</span></label>
+                        {!! Form::textarea('message', null, ['placeholder' => 'What do you have to say?']) !!}
+                        <label class="upsidedown" for="message">M<span>essage</span></label>
+                    </div>
                 </div>
             </div>
         </div>

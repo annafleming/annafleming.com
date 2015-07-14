@@ -325,6 +325,12 @@ section.contact {
             font-size: 0.41em;
             font-family: SerifGotic;
             line-height: 1em; }
+          section.contact div.contact-body div.contact-form div.form-block label.upsidedown {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
         section.contact div.contact-body div.contact-form div.form-block input {
           font-size: 0.39em;
           font-family: ProximaNovaThin;
@@ -339,8 +345,10 @@ section.contact {
           background-color: #a9cadf;
           color: #424344;
           border: none;
-          float: right;
-          width: 92%; }
+          width: 96%;
+          margin-left: 2%;
+          resize: none;
+          height: 64%; }
         section.contact div.contact-body div.contact-form div.form-block.email-block {
           top: 0;
           right: 0; }
@@ -350,6 +358,10 @@ section.contact {
         section.contact div.contact-body div.contact-form div.form-block.message-block {
           top: 4.76em;
           left: 0; }
+        section.contact div.contact-body div.contact-form div.form-block div.form-block-inside {
+          width: 100%;
+          height: 100%;
+          position: relative; }
 
 @media (max-width: 1500px) {
   html body section.works div.works-list article {
