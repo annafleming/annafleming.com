@@ -29,7 +29,7 @@ section.contact{
     }
     div.contact-body {
         width: 100%;
-        padding: 200px 17% 170px 17%;
+        padding: 200px 17% 200px 17%;
         font-size: 3em;
         h2{
             font-size: 1em;
@@ -47,18 +47,16 @@ section.contact{
         div.contact-form{
             display: inline-block;
             width: 60.1%;
-            min-height: 965px;
             vertical-align: top;
-            //background-color: #ffffff;
             margin-top: 1.18em;
             position: relative;
             div.form-block{
                 width: 71.43%;
-                height: 625px;
+                height: 8.68em;
                 background-color: #7aacce;
                 border: 9px solid #6e9bba;
-                position: absolute;
                 padding: 0 2.15%;
+                text-align: left;
                 label{
                     font-size: 1em;
                     line-height: 1em;
@@ -100,14 +98,16 @@ section.contact{
                     height: 64%;
                 }
                 &.email-block{
-                    top: 0;
-                    right: 0;
+                    float: right;
+                    margin-bottom: 4.76em;;
                 }
                 &.subject-block{
+                    position: absolute;
                     top: 2.38em;
-                    right: 1.18em;
+                    right: 14.29%;
                 }
                 &.message-block{
+                    position: absolute;
                     top: 4.76em;
                     left: 0;
                 }
@@ -118,27 +118,153 @@ section.contact{
                 }
             }
         }
+        input.contact-submit{
+            display: inline-block;
+            background-color: #c06b62;
+            background: repeating-radial-gradient(
+                            circle,
+                            #c06b62,
+                            #c06b62 51px,
+                            #ad6058 24px,
+                            #ad6058 56px
+            );
+            font-size: 0.67em;
+            font-family: SerifGotic;
+            text-transform: uppercase;
+            width: 4.6875em;
+            height: 4.6875em;
+            margin-left: -1.8615em;
+            margin-bottom: -2.34375em;
+            vertical-align: bottom;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 0.167em solid #9a564e;
+        }
     }
-    input.contact-submit{
-        display: inline-block;
-        background-color: #c06b62;
-        background: repeating-radial-gradient(
-                        circle,
-                        #c06b62,
-                        #c06b62 51px,
-                        #ad6058 24px,
-                        #ad6058 56px
-        );
-        font-size: 0.67em;
+    footer{
+        text-align: center;
+        width: 100%;
+        clear: both;
+        font-size: 3em;
         font-family: SerifGotic;
-        text-transform: uppercase;
-        width: 4.6875em;
-        height: 4.6875em;
-        margin-left: -1.8615em;
-        margin-bottom: -2.34375em;
-        vertical-align: bottom;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 0.167em solid #9a564e;
+        color: #424344;
+        margin-bottom: 170px;
+        p{
+            margin: 0;
+            line-height: 1em;
+            margin-bottom: 0.3em;
+            a{
+                color: #6e9bba;
+            }
+        }
+    }
+}
+
+@mixin contact-max-width-1500 {
+    section.contact{
+        div.contact-body {
+            padding: 140px 10% 200px 10%;
+        }
+    }
+}
+
+@mixin contact-max-width-1250 {
+    section.contact{
+        div.contact-body {
+            padding: 100px 10% 150px 10%;
+            font-size: 2.6em;
+        }
+        footer{
+            font-size: 2.6em;
+            margin-bottom: 150px;
+        }
+    }
+}
+
+@mixin contact-max-width-1100 {
+    section.contact{
+        header{
+            font-size: 5em;
+        }
+        div.contact-body {
+            padding: 80px 6% 100px 6%;
+        }
+    }
+}
+
+@mixin contact-max-width-990 {
+    section.contact {
+        header{
+            font-size: 4em;
+        }
+        div.contact-body {
+            text-align: center;
+            font-size: 2.2em;
+            h2 {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            div.contact-form{
+                width: 70%;
+            }
+        }
+        footer{
+            font-size: 2.2em;
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@mixin contact-max-width-900 {
+    section.contact {
+        header{
+            font-size: 3em;
+        }
+    }
+}
+
+@mixin contact-max-width-665 {
+    section.contact {
+        div.contact-body {
+            font-size: 2em;
+            text-align: center;
+            div.contact-form{
+                width: 95%;
+                div.form-block {
+                    width: 78%;
+                    &.subject-block{
+                        right: 11%;
+                    }
+                }
+            }
+            input.contact-submit{
+                display: block;
+                margin: 20px 0;
+                float: right;
+            }
+        }
+        footer{
+            font-size: 1.8em;
+        }
+    }
+}
+@mixin contact-max-width-399{
+    section.contact {
+        div.contact-body {
+            font-size: 1.8em;
+            text-align: center;
+            div.contact-form{
+                div.form-block {
+                    width: 86%;
+                    &.subject-block{
+                        right: 7%;
+                    }
+                }
+            }
+        }
+        footer{
+            font-size: 1.8em;
+        }
     }
 }

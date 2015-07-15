@@ -8,6 +8,7 @@
         {!! Form::open(['method' => 'POST', 'action' => 'ContactController@store']) !!}
         <div class="contact-body">
             <h2><span>Make</span> your calling card</h2>
+
             <div class="contact-form">
                 <div class="form-block email-block">
                     <div class="form-block-inside">
@@ -33,7 +34,13 @@
             </div>
 
             {!! Form::submit('Send', ['class' => 'contact-submit']) !!}
+
         </div>
+
         {!! Form::close() !!}
+        <footer>
+            <p>You can also visit me on</p>
+            <p>{!! link_to('https://www.linkedin.com/in/annaafleming', 'LinkedIn') !!}.</p>
+        </footer>
     </section>
 @endsection

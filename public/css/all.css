@@ -292,7 +292,7 @@ section.contact {
         margin-right: -23px; }
   section.contact div.contact-body {
     width: 100%;
-    padding: 200px 17% 170px 17%;
+    padding: 200px 17% 200px 17%;
     font-size: 3em; }
     section.contact div.contact-body h2 {
       font-size: 1em;
@@ -308,17 +308,16 @@ section.contact {
     section.contact div.contact-body div.contact-form {
       display: inline-block;
       width: 60.1%;
-      min-height: 965px;
       vertical-align: top;
       margin-top: 1.18em;
       position: relative; }
       section.contact div.contact-body div.contact-form div.form-block {
         width: 71.43%;
-        height: 625px;
+        height: 8.68em;
         background-color: #7aacce;
         border: 9px solid #6e9bba;
-        position: absolute;
-        padding: 0 2.15%; }
+        padding: 0 2.15%;
+        text-align: left; }
         section.contact div.contact-body div.contact-form div.form-block label {
           font-size: 1em;
           line-height: 1em;
@@ -355,43 +354,67 @@ section.contact {
           resize: none;
           height: 64%; }
         section.contact div.contact-body div.contact-form div.form-block.email-block {
-          top: 0;
-          right: 0; }
+          float: right;
+          margin-bottom: 4.76em; }
         section.contact div.contact-body div.contact-form div.form-block.subject-block {
+          position: absolute;
           top: 2.38em;
-          right: 1.18em; }
+          right: 14.29%; }
         section.contact div.contact-body div.contact-form div.form-block.message-block {
+          position: absolute;
           top: 4.76em;
           left: 0; }
         section.contact div.contact-body div.contact-form div.form-block div.form-block-inside {
           width: 100%;
           height: 100%;
           position: relative; }
-  section.contact input.contact-submit {
-    display: inline-block;
-    background-color: #c06b62;
-    background: repeating-radial-gradient(circle, #c06b62, #c06b62 51px, #ad6058 24px, #ad6058 56px);
-    font-size: 0.67em;
+    section.contact div.contact-body input.contact-submit {
+      display: inline-block;
+      background-color: #c06b62;
+      background: repeating-radial-gradient(circle, #c06b62, #c06b62 51px, #ad6058 24px, #ad6058 56px);
+      font-size: 0.67em;
+      font-family: SerifGotic;
+      text-transform: uppercase;
+      width: 4.6875em;
+      height: 4.6875em;
+      margin-left: -1.8615em;
+      margin-bottom: -2.34375em;
+      vertical-align: bottom;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 0.167em solid #9a564e; }
+  section.contact footer {
+    text-align: center;
+    width: 100%;
+    clear: both;
+    font-size: 3em;
     font-family: SerifGotic;
-    text-transform: uppercase;
-    width: 4.6875em;
-    height: 4.6875em;
-    margin-left: -1.8615em;
-    margin-bottom: -2.34375em;
-    vertical-align: bottom;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 0.167em solid #9a564e; }
+    color: #424344;
+    margin-bottom: 170px; }
+    section.contact footer p {
+      margin: 0;
+      line-height: 1em;
+      margin-bottom: 0.3em; }
+      section.contact footer p a {
+        color: #6e9bba; }
 
 @media (max-width: 1500px) {
   html body section.works div.works-list article {
     width: 400px;
-    height: 400px; } }
+    height: 400px; }
+  html body section.contact div.contact-body {
+    padding: 140px 10% 200px 10%; } }
 
 @media (max-width: 1250px) {
   html body section.works div.works-list article {
     width: 370px;
-    height: 370px; } }
+    height: 370px; }
+  html body section.contact div.contact-body {
+    padding: 100px 10% 150px 10%;
+    font-size: 2.6em; }
+  html body section.contact footer {
+    font-size: 2.6em;
+    margin-bottom: 150px; } }
 
 @media (max-width: 1150px) {
   html body section.works div.works-list article {
@@ -409,7 +432,11 @@ section.contact {
     font-size: 5em; }
   html body section.works div.works-list {
     padding-left: 13%;
-    padding-right: 13%; } }
+    padding-right: 13%; }
+  html body section.contact header {
+    font-size: 5em; }
+  html body section.contact div.contact-body {
+    padding: 80px 6% 100px 6%; } }
 
 @media (max-width: 990px) {
   html body aside.about-me div.about-me-block div.about-me-photo {
@@ -425,7 +452,21 @@ section.contact {
     font-size: 4em; }
   html body section.works div.works-list {
     padding-left: 9%;
-    padding-right: 9%; } }
+    padding-right: 9%; }
+  html body section.contact header {
+    font-size: 4em; }
+  html body section.contact div.contact-body {
+    text-align: center;
+    font-size: 2.2em; }
+    html body section.contact div.contact-body h2 {
+      display: block;
+      width: 100%;
+      text-align: center; }
+    html body section.contact div.contact-body div.contact-form {
+      width: 70%; }
+  html body section.contact footer {
+    font-size: 2.2em;
+    margin-bottom: 80px; } }
 
 @media (max-width: 900px) {
   html body article.slogan-block div.slogan div.slogan-head {
@@ -493,7 +534,22 @@ section.contact {
     width: 360px;
     height: 360px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  html body section.contact div.contact-body {
+    font-size: 2em;
+    text-align: center; }
+    html body section.contact div.contact-body div.contact-form {
+      width: 95%; }
+      html body section.contact div.contact-body div.contact-form div.form-block {
+        width: 78%; }
+        html body section.contact div.contact-body div.contact-form div.form-block.subject-block {
+          right: 11%; }
+    html body section.contact div.contact-body input.contact-submit {
+      display: block;
+      margin: 20px 0;
+      float: right; }
+  html body section.contact footer {
+    font-size: 1.8em; } }
 
 @media (max-width: 399px) {
   html body section.works div.works-list article {
@@ -501,7 +557,16 @@ section.contact {
     width: 300px;
     height: 300px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+  html body section.contact div.contact-body {
+    font-size: 1.8em;
+    text-align: center; }
+    html body section.contact div.contact-body div.contact-form div.form-block {
+      width: 86%; }
+      html body section.contact div.contact-body div.contact-form div.form-block.subject-block {
+        right: 7%; }
+  html body section.contact footer {
+    font-size: 1.8em; } }
 
 @media (min-width: 1500px) {
   html body section.works div.works-list article {

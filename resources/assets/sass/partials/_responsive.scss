@@ -2,6 +2,7 @@
     html{
         body{
             @include works-max-width-1500;
+            @include contact-max-width-1500;
         }
     }
 }
@@ -10,6 +11,7 @@
     html{
         body{
             @include works-max-width-1250;
+            @include contact-max-width-1250;
         }
     }
 }
@@ -27,6 +29,7 @@
         body {
             @include home-max-width-1100;
             @include works-max-width-1100;
+            @include contact-max-width-1100;
         }
     }
 }
@@ -36,6 +39,7 @@
         body {
             @include home-max-width-990;
             @include works-max-width-990;
+            @include contact-max-width-990;
         }
     }
 }
@@ -64,6 +68,7 @@
             @include app-max-width-665;
             @include home-max-width-665;
             @include works-max-width-665;
+            @include contact-max-width-665;
         }
     }
 }
@@ -71,6 +76,7 @@
     html{
         body{
             @include works-max-width-399;
+            @include contact-max-width-399;
         }
     }
 }
