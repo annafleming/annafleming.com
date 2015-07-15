@@ -1,9 +1,12 @@
 <?php namespace App\Http\Controllers;
 
+use App\Email;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\SendEmailRequest;
+use Laracasts\Flash\Flash;
 
 class ContactController extends Controller {
 
@@ -17,6 +20,17 @@ class ContactController extends Controller {
 		return view('contact.index');
 	}
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
+    public function store(SendEmailRequest $emailRequest)
+    {
+        Email::create($emailRequest->all());
+        Flash::message('Your email has been sent. Thank you!');
+        return redirect('contact');
+    }
 	/**
 	 * Show the form for creating a new resource.
 	 *
@@ -27,15 +41,6 @@ class ContactController extends Controller {
 		//
 	}
 
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		//
-	}
 
 	/**
 	 * Display the specified resource.

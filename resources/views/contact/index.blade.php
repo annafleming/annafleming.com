@@ -6,7 +6,13 @@
             <h1><span>Let's</span>talk</h1>
         </header>
         {!! Form::open(['method' => 'POST', 'action' => 'ContactController@store']) !!}
+        <div>
+            @include('partials.errors')
+        </div>
         <div class="contact-body">
+            <div class="message-success">
+                @include('flash::message')
+            </div>
             <h2><span>Make</span> your calling card</h2>
 
             <div class="contact-form">
