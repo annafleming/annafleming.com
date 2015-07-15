@@ -23,7 +23,7 @@ class SendEmailRequest extends Request {
 	{
         return [
             'email' => 'email|required',
-            'message' => 'required',
+            'body' => 'required',
         ];
 	}
 

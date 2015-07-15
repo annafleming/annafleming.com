@@ -16,6 +16,7 @@ Route::get('/', 'HomeController@index');
 Route::get('/works/manage', 'WorksController@manage');
 Route::resource('works', 'WorksController');
 Route::resource('contact', 'ContactController');
+Route::resource('cv', 'ResumeController');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

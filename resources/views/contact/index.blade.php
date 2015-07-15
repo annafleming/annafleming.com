@@ -32,9 +32,9 @@
                 </div>
                 <div class="form-block message-block">
                     <div class="form-block-inside">
-                        <label for="message">M<span>essage</span></label>
-                        {!! Form::textarea('message', null, ['placeholder' => 'What do you have to say?']) !!}
-                        <label class="upsidedown" for="message">M<span>essage</span></label>
+                        <label for="body">M<span>essage</span></label>
+                        {!! Form::textarea('body', null, ['placeholder' => 'What do you have to say?']) !!}
+                        <label class="upsidedown" for="body">M<span>essage</span></label>
                     </div>
                 </div>
             </div>
