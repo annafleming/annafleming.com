@@ -81,7 +81,6 @@ class WorksController extends Controller {
 	 */
 	public function update($id, PrepareWorkRequest $workRequest)
 	{
-        //dd($workRequest->all());
         $work = $this->work->findOrFail($id);
         $work = $work->manageWorkImage($workRequest);
         $work->update();

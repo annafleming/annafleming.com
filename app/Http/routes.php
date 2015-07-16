@@ -18,6 +18,18 @@ Route::resource('works', 'WorksController');
 Route::resource('contact', 'ContactController');
 Route::resource('cv', 'ResumeController');
 
+Route::get('/practical/move/{id}/{direction}', array(
+    'as' => 'practical.move',
+    'uses' => 'PracticalSkillsController@move'
+));
+
+/*
+Route::get('/practical/move/{id}/{direction}', function($id,$direction){
+    return 'uhj';
+});
+*/
+Route::resource('practical', 'PracticalSkillsController');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

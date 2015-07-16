@@ -27,8 +27,7 @@
                     <td>{{ $work->image }}</td>
                     <td>
                         {!! link_to_route ('works.destroy', 'Delete', ['id'=>$work->id], ['class' => 'btn btn-primary
-                        btn-sm
-                        work-ajax-delete', 'data-token' => csrf_token()]) !!}
+                        btn-sm item-ajax-delete', 'data-token' => csrf_token()]) !!}
                         {!! link_to_route ('works.edit', 'Edit', ['id'=>$work->id], ['class' => 'btn btn-danger
                         btn-sm'])
                         !!}
