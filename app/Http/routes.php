@@ -22,14 +22,12 @@ Route::get('/practical/move/{id}/{direction}', array(
     'as' => 'practical.move',
     'uses' => 'PracticalSkillsController@move'
 ));
-
-/*
-Route::get('/practical/move/{id}/{direction}', function($id,$direction){
-    return 'uhj';
-});
-*/
 Route::resource('practical', 'PracticalSkillsController');
-
+Route::resource('skillcategory', 'SkillCategoryController');
+Route::get('/skillcategory/move/{id}/{direction}', array(
+    'as' => 'skillcategory.move',
+    'uses' => 'SkillCategoryController@move'
+));
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
