@@ -40,4 +40,9 @@ class SkillCategory extends Model {
         }
         return 0;
     }
+
+    public function skills()
+    {
+        return $this->hasMany('App\Skill', 'category_id')->orderBy('order', 'asc');
+    }
 }

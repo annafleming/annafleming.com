@@ -15,10 +15,6 @@ class SkillCategoryController extends Controller {
         $this->category = $category;
         $this->middleware('auth');
     }
-    public function index(){
-        $categories = $this->category->orderBy('order', 'asc')->get();
-        return view('skillcategory.index', compact('categories'));
-    }
 
     public function create()
     {
@@ -33,7 +29,7 @@ class SkillCategoryController extends Controller {
         $category = $this->category->fill($request->all());
         $category->setOrder();
         $category->save();
-        return redirect('skillcategory');
+        return redirect('skills');
     }
 
     public function edit($id)
@@ -50,7 +46,7 @@ class SkillCategoryController extends Controller {
         $category = $this->category->findOrFail($id);
         $category->fill($request->all());
         $category->update();
-        return redirect('skillcategory');
+        return redirect('skills');
     }
 
     public function destroy($id)
@@ -72,7 +68,7 @@ class SkillCategoryController extends Controller {
             return $result;
         else {
             $categories = $this->category->orderBy('order', 'asc')->get();
-            return view('skillcategory.partials.table', compact('categories'));
+            return view('skills.partials.table', compact('categories'));
         }
     }
 

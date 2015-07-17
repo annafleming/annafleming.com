@@ -23,6 +23,12 @@ div.adminBlock{
     table{
         background-color: lightblue;
         margin-top: 20px;
+        th{
+            background-color: lightcoral;
+        }
+        tr.category-skill{
+            background-color: #ffffff;
+        }
     }
     form{
         background-color: lightblue;
