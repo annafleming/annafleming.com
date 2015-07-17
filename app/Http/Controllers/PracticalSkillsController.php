@@ -108,7 +108,12 @@ class PracticalSkillsController extends Controller {
             $result = $skill->down();
         else
             abort(400);
-        return $result;
+        if ($result == 0)
+            return $result;
+        else {
+            $skills = $this->skill->orderBy('order', 'asc')->get();
+            return view('practical.partials.table', compact('skills'));
+        }
     }
 
 }

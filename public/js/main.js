@@ -1,5 +1,5 @@
-$(document).ready(function () {
-    $('.item-ajax-delete').on('click', function (e) {
+(function() {
+    $('div.adminBlock').on('click', '.item-ajax-delete', function (e) {
         e.preventDefault();
 
         var item = $(this),
@@ -27,26 +27,18 @@ $(document).ready(function () {
         });
     });
 
-    $('.item-ajax-move').on('click', function (e) {
+    $('div.adminBlock').on('click', '.item-ajax-move' ,function (e) {
         e.preventDefault();
         var item = $(this),
             url = item.attr('href');
-
         $.ajax({
             type: 'get',
             url: url,
             success: function (response) {
-                alert(response);
-                /*
-                if (response == 1){
-                    item.closest('tr').remove();
-                    if ($('table tbody tr').length == 0)
-                        $('div.empty-table-message').show();
-                }
-                else {
-                    alert("Couldn't delete the item");
-                }
-               */
+                if (response != 0)
+                    $('.tableContainer').html(response);
+                else
+                    alert("Couldn't move the item");
             },
             error: function (error) {
                 alert('Error');
@@ -54,9 +46,7 @@ $(document).ready(function () {
             }
         });
     });
-});
 
-(function() {
     $('div.work-head').on('click',function(e){
         var article = $(this).parent();
         if (article.find('img').length != 0){
@@ -64,9 +54,7 @@ $(document).ready(function () {
             infoBlock.stop().slideToggle();
         }
     });
-})();
 
-(function() {
     $('div.message-success button.close').on('click',function(e){
         var el = $(this).parent();
         el.slideUp(600, function(){
