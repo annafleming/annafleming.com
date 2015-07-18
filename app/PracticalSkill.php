@@ -1,44 +1,53 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Traits\SwapModelRows;
 
 class PracticalSkill extends Model {
 
+    use SwapModelRows;
+
     protected $fillable = ['name', 'rank', 'hidden'];
 
+    /**
+     * Sets order for the resource
+     *
+     */
     public function setOrder()
     {
-        $order = $this->getLastOrderValue();
-        $this->order = ++$order;
-    }
-    protected function getLastOrderValue()
-    {
-        return ($first = $this->orderBy('order', 'desc')->first()) ? $first->order : 0;
+        $this->order = $this->getLastOrderValue() + 1;
     }
 
+    /**
+     * Returns the last order value from all the resources
+     *
+     * @return int
+     */
+    protected function getLastOrderValue()
+    {
+        return ($last = $this->orderBy('order', 'desc')->first()) ? $last->order : 0;
+    }
+
+    /**
+     * Swaps the current resource with the previous one
+     *
+     * @return int
+     */
     public function up()
     {
         $prev = $this->orderBy('order', 'desc')->where('order', '<', $this->order)->first();
         return $this->swap($prev, $this);
     }
 
+    /**
+     * Swaps the current resource with the next one
+     *
+     * @return int
+     */
     public function down()
     {
         $post = $this->orderBy('order', 'asc')->where('order', '>', $this->order)->first();
         return $this->swap($post, $this);
-    }
-
-    protected function swap($modelA, $modelB)
-    {
-        if ($modelA && $modelB)
-        {
-            $currentOrder = $modelA->order;
-            $modelA->order = $modelB->order;
-            $modelB->order = $currentOrder;
-            if ($modelA->update() && $modelB->update())
-                return 1;
-        }
-        return 0;
     }
 
 }

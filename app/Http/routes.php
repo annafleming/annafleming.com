@@ -18,11 +18,10 @@ Route::resource('works', 'WorksController');
 Route::resource('contact', 'ContactController');
 Route::resource('cv', 'ResumeController');
 
-Route::get('/practical/move/{id}/{direction}', array(
-    'as' => 'practical.move',
-    'uses' => 'PracticalSkillsController@move'
-));
 Route::resource('practical', 'PracticalSkillsController');
+Route::get('/practical/move/{id}/{direction}', 'PracticalSkillsController@move')->where('direction', 'up|down');
+
+
 Route::resource('skillcategory', 'SkillCategoryController');
 
 Route::get('/skillcategory/move/{id}/{direction}', array(
@@ -36,6 +35,14 @@ Route::get('/skills/move/{id}/{direction}', array(
     'as' => 'skills.move',
     'uses' => 'SkillsController@move'
 ));
+
+Route::resource('languages', 'LanguagesController');
+
+Route::get('/languages/move/{id}/{direction}', array(
+    'as' => 'languages.move',
+    'uses' => 'LanguagesController@move'
+));
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

@@ -50,16 +50,6 @@ class WorksController extends Controller {
         return redirect('works/manage');
 	}
 
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
 
 	/**
 	 * Show the form for editing the specified resource.
@@ -101,7 +91,7 @@ class WorksController extends Controller {
 	}
 
     /**
-     *  Displays table of the resources
+     *  Displays table of the resources for admin
      *
      * @return Response
      */
@@ -109,7 +99,6 @@ class WorksController extends Controller {
     {
         $works = Work::all();
         return view('works.manage', compact('works'));
-
     }
 
 }
