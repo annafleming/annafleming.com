@@ -54,17 +54,6 @@ class LanguagesController extends Controller {
 	}
 
 	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
-
-	/**
 	 * Show the form for editing the specified resource.
 	 *
 	 * @param  int  $id
@@ -106,21 +95,22 @@ class LanguagesController extends Controller {
         return ($language->delete()) ? 1 : 0;
 	}
 
+    /**
+     * Change the order of the resources.
+     *
+     * @param  int  $id
+     * @param  str  $direction
+     * @return Response
+     */
     public function move($id, $direction)
     {
         $language = $this->language->findOrFail($id);
-        if ($direction == 'up')
-            $result = $language->up();
-        elseif ($direction == 'down')
-            $result = $language->down();
-        else
-            abort(400);
-        if ($result == 0)
+        if (0 == $result = $language->$direction()){
             return $result;
+        }
         else {
             $languages = $this->language->orderBy('order', 'asc')->get();
             return view('languages.partials.table', compact('languages'));
         }
     }
-
 }

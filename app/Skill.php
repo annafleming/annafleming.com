@@ -1,62 +1,62 @@
 <?php namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Traits\SwapModelRows;
+use App\Traits\SetOrderValue;
+use App\Traits\ConditionManagement;
 
 class Skill extends Model {
 
+    use SwapModelRows, SetOrderValue, ConditionManagement;
+
 	protected $fillable = ['name', 'category_id', 'hidden'];
 
+    /**
+     * Sets order for the resource
+     *
+     */
     public function setOrder()
     {
-        $order = $this->getLastOrderValue();
-        $this->order = ++$order;
-    }
-    protected function getLastOrderValue()
-    {
-        $last = $this->orderBy('order', 'desc')
-                     ->where('category_id', $this->category_id)
-                     ->first();
-        return ($last) ? $last->order : 0;
+        $this->setOrderValue([['category_id', $this->category_id]]);
     }
 
+    /**
+     * Category of the current skill
+     *
+     * @return
+     */
     public function category()
     {
-        return $this->belongsTo('App\SkillCategory', 'category_id');
+        return $this->belongsTo('App\Category', 'category_id');
     }
 
+    /**
+     * List of all the categories
+     *
+     * @return array
+     */
     public function categoryList()
     {
-        return SkillCategory::lists('name', 'id');
+        return Category::lists('name', 'id');
     }
 
+    /**
+     * Swaps the current resource with the previous one
+     *
+     * @return int
+     */
     public function up()
     {
-        $prev = $this->orderBy('order', 'desc')
-                     ->where('order', '<', $this->order)
-                     ->where('category_id', $this->category_id)
-                     ->first();
-        return $this->swap($prev, $this);
+        return $this->moveUp([['category_id', $this->category_id]]);
     }
 
+    /**
+     * Swaps the current resource with the next one
+     *
+     * @return int
+     */
     public function down()
     {
-        $post = $this->orderBy('order', 'asc')
-                     ->where('order', '>', $this->order)
-                     ->where('category_id', $this->category_id)
-                     ->first();
-        return $this->swap($post, $this);
-    }
-
-    protected function swap($modelA, $modelB)
-    {
-        if ($modelA && $modelB)
-        {
-            $currentOrder = $modelA->order;
-            $modelA->order = $modelB->order;
-            $modelB->order = $currentOrder;
-            if ($modelA->update() && $modelB->update())
-                return 1;
-        }
-        return 0;
+        return $this->moveDown([['category_id', $this->category_id]]);
     }
 }

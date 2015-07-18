@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use App\Skill;
-use App\SkillCategory;
+use App\Category;
 
 class SkillsController extends Controller {
 
@@ -23,7 +23,7 @@ class SkillsController extends Controller {
 	 */
 	public function index()
 	{
-        $categories = SkillCategory::orderBy('order', 'asc')->get();
+        $categories = Category::orderBy('order', 'asc')->get();
         return view('skills.index', compact('categories'));
 	}
 
@@ -53,17 +53,6 @@ class SkillsController extends Controller {
         $skill->setOrder();
         $skill->save();
         return redirect('skills');
-	}
-
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
 	}
 
 	/**
@@ -108,19 +97,21 @@ class SkillsController extends Controller {
         return ($skill->delete()) ? 1 : 0;
 	}
 
+    /**
+     * Change the order of the resources.
+     *
+     * @param  int  $id
+     * @param  str  $direction
+     * @return Response
+     */
     public function move($id, $direction)
     {
         $skill = $this->skill->findOrFail($id);
-        if ($direction == 'up')
-            $result = $skill->up();
-        elseif ($direction == 'down')
-            $result = $skill->down();
-        else
-            abort(400);
-        if ($result == 0)
+        if (0 == $result = $skill->$direction()){
             return $result;
+        }
         else {
-            $categories = SkillCategory::orderBy('order', 'asc')->get();
+            $categories = Category::orderBy('order', 'asc')->get();
             return view('skills.partials.table', compact('categories'));
         }
     }

@@ -13,16 +13,16 @@
             <td>{{ ($category->hidden) ? 'Hidden' : 'Visible'}}</td>
             <td>{{ $category->name }}</td>
             <td>
-                {!! link_to ("skillcategory/move/$category->id/up", '⬆', ['class' => 'btn btn-success
+                {!! link_to ("categories/move/$category->id/up", '⬆', ['class' => 'btn btn-success
                 item-ajax-move btn-sm']) !!}
-                {!! link_to ("skillcategory/move/$category->id/down", '⬇', ['class' => 'btn btn-success
+                {!! link_to ("categories/move/$category->id/down", '⬇', ['class' => 'btn btn-success
                 item-ajax-move btn-sm']) !!}
             </td>
             <td>
-                {!! link_to_route ('skillcategory.destroy', 'Delete', ['id'=>$category->id], ['class' => 'btn
+                {!! link_to_route ('categories.destroy', 'Delete', ['id'=>$category->id], ['class' => 'btn
                 btn-primary
                 btn-sm item-ajax-delete', 'data-token' => csrf_token()]) !!}
-                {!! link_to_route ('skillcategory.edit', 'Edit', ['id'=>$category->id], ['class' => 'btn btn-danger
+                {!! link_to_route ('categories.edit', 'Edit', ['id'=>$category->id], ['class' => 'btn btn-danger
                 btn-sm']) !!}
             </td>
         </tr>

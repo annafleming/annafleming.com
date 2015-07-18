@@ -4,23 +4,33 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use App\SkillCategory;
+use App\Category;
 
-class SkillCategoryController extends Controller {
+class CategoriesController extends Controller {
 
     protected $category;
 
-    public function __construct(SkillCategory $category)
+    public function __construct(Category $category)
     {
         $this->category = $category;
         $this->middleware('auth');
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return Response
+     */
     public function create()
     {
-        return view('skillcategory.create', ['category' => $this->category]);
+        return view('categories.create', ['category' => $this->category]);
     }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @return Response
+     */
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -32,12 +42,24 @@ class SkillCategoryController extends Controller {
         return redirect('skills');
     }
 
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return Response
+     */
     public function edit($id)
     {
         $category = $this->category->findOrFail($id);
-        return view('skillcategory.edit', compact('category'));
+        return view('categories.edit', compact('category'));
     }
 
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
     public function update($id, Request $request)
     {
         $this->validate($request, [
@@ -49,23 +71,32 @@ class SkillCategoryController extends Controller {
         return redirect('skills');
     }
 
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return Response
+     */
     public function destroy($id)
     {
         $category = $this->category->findOrFail($id);
         return ($category->delete()) ? 1 : 0;
     }
 
+    /**
+     * Change the order of the resources.
+     *
+     * @param  int  $id
+     * @param  str  $direction
+     * @return Response
+     */
+
     public function move($id, $direction)
     {
         $category = $this->category->findOrFail($id);
-        if ($direction == 'up')
-            $result = $category->up();
-        elseif ($direction == 'down')
-            $result = $category->down();
-        else
-            abort(400);
-        if ($result == 0)
+        if (0 == $result = $category->$direction()){
             return $result;
+        }
         else {
             $categories = $this->category->orderBy('order', 'asc')->get();
             return view('skills.partials.table', compact('categories'));

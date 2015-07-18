@@ -16,6 +16,7 @@ class PracticalSkillsController extends Controller {
         $this->skill = $skill;
         $this->middleware('auth');
     }
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -95,7 +96,6 @@ class PracticalSkillsController extends Controller {
      * @param  str  $direction
      * @return Response
      */
-
     public function move($id, $direction)
     {
         $skill = $this->skill->findOrFail($id);

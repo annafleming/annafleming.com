@@ -13,36 +13,23 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/works/manage', 'WorksController@manage');
-Route::resource('works', 'WorksController');
 Route::resource('contact', 'ContactController');
 Route::resource('cv', 'ResumeController');
 
-Route::resource('practical', 'PracticalSkillsController');
+Route::resource('works', 'WorksController', array('except' => array('show')));
+Route::get('/works/manage', 'WorksController@manage');
+
+Route::resource('practical', 'PracticalSkillsController', array('except' => array('show')));
 Route::get('/practical/move/{id}/{direction}', 'PracticalSkillsController@move')->where('direction', 'up|down');
 
+Route::resource('categories', 'CategoriesController', array('except' => array('show', 'index')));
+Route::get('/categories/move/{id}/{direction}', 'CategoriesController@move')->where('direction', 'up|down');
 
-Route::resource('skillcategory', 'SkillCategoryController');
+Route::resource('skills', 'SkillsController', array('except' => array('show')));
+Route::get('/skills/move/{id}/{direction}', 'SkillsController@move')->where('direction', 'up|down');
 
-Route::get('/skillcategory/move/{id}/{direction}', array(
-    'as' => 'skillcategory.move',
-    'uses' => 'SkillCategoryController@move'
-));
-
-Route::resource('skills', 'SkillsController');
-
-Route::get('/skills/move/{id}/{direction}', array(
-    'as' => 'skills.move',
-    'uses' => 'SkillsController@move'
-));
-
-Route::resource('languages', 'LanguagesController');
-
-Route::get('/languages/move/{id}/{direction}', array(
-    'as' => 'languages.move',
-    'uses' => 'LanguagesController@move'
-));
-
+Route::resource('languages', 'LanguagesController', array('except' => array('show')));
+Route::get('/languages/move/{id}/{direction}', 'LanguagesController@move')->where('direction', 'up|down');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

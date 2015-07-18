@@ -17,7 +17,7 @@ class CreateSkillsTable extends Migration {
 			$table->increments('id');
             $table->string('name');
             $table->integer('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('skill_categories')->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->tinyInteger('order');
             $table->tinyInteger('hidden');
 			$table->timestamps();
