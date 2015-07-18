@@ -45,11 +45,12 @@ class WorksController extends Controller {
      */
 	public function store(PrepareWorkRequest $workRequest)
 	{
-        $work = $this->work->manageWorkImage($workRequest);
+        $work = $this->work->fill($workRequest->all());
+        $work->manageWorkImage($workRequest->file('image'));
         $work->save();
         return redirect('works/manage');
-	}
 
+	}
 
 	/**
 	 * Show the form for editing the specified resource.
@@ -72,7 +73,8 @@ class WorksController extends Controller {
 	public function update($id, PrepareWorkRequest $workRequest)
 	{
         $work = $this->work->findOrFail($id);
-        $work = $work->manageWorkImage($workRequest);
+        $work->fill($workRequest->all());
+        $work->manageWorkImage($workRequest->file('image'));
         $work->update();
         return redirect('works/manage');
 	}
