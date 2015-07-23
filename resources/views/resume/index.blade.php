@@ -43,7 +43,56 @@
 
         </div>
         <div class="work-history">
-            ked
+            <div class="v-line"></div>
+            <div class="right timeline-block">
+                <div class="inner" style="min-height:15em">
+                    <div class="arrow"></div>
+                    <div class="inner-content">
+                        <h4>Penza State University</h4>
+                        <p class="timeline-desc">
+                            Bachelors of Computer Science in
+                            Economics, with Honors
+                        </p>
+                        <p class="timeline-date">2008-2012</p>
+                    </div>
+                </div>
+            </div>
+            <div class="left timeline-block">
+                <div class="inner">
+                    <div class="arrow"></div>
+                    <div class="inner-content">
+                        <h4>Plus One</h4>
+                        <p class="timeline-desc">
+                            Full Stack Developer
+                        </p>
+                        <p class="timeline-date">late 2014 - early 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right timeline-block special">
+                <div class="inner">
+                    <div class="arrow"></div>
+                    <div class="inner-content">
+                        <h4>Moved to US</h4>
+                        <p class="timeline-desc">
+                            Mild culture shock
+                        </p>
+                        <p class="timeline-date">late 2014 - early 2015</p>
+                    </div>
+                </div>
+            </div>
+            <div class="left timeline-block">
+                <div class="inner">
+                    <div class="arrow"></div>
+                    <div class="inner-content">
+                        <h4>Rix Consulting</h4>
+                        <p class="timeline-desc">
+                            Web Auditing
+                        </p>
+                        <p class="timeline-date">mid 2015 - Currently</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 @endsection

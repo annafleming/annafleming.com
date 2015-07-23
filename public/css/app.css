@@ -536,7 +536,62 @@ section.resume div.currently-learning-block {
       font-family: ProximaNovaSemibold; }
 
 section.resume div.work-history {
-  background-color: #83b9dc; }
+  background-color: #83b9dc;
+  position: relative;
+  font-size: 1em;
+  font-family: ProximaNovaLight;
+  color: #46515d; }
+  section.resume div.work-history div.timeline-block {
+    display: inline-block;
+    width: 50%; }
+    section.resume div.work-history div.timeline-block div.inner {
+      position: relative; }
+      section.resume div.work-history div.timeline-block div.inner div.arrow {
+        position: absolute;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 1em solid transparent;
+        margin-top: -1em; }
+      section.resume div.work-history div.timeline-block div.inner div.inner-content {
+        display: inline-block;
+        margin-top: 20%; }
+        section.resume div.work-history div.timeline-block div.inner div.inner-content h4 {
+          text-transform: capitalize;
+          font-size: 1.5em;
+          font-family: SerifGotic; }
+        section.resume div.work-history div.timeline-block div.inner div.inner-content p {
+          margin: 0;
+          line-height: 1.2em; }
+        section.resume div.work-history div.timeline-block div.inner div.inner-content p.timeline-date {
+          font-family: ProximaNovaThin; }
+    section.resume div.work-history div.timeline-block.left {
+      border-right: 0.58em solid #c06b62; }
+      section.resume div.work-history div.timeline-block.left div.inner {
+        padding-right: 1.75em;
+        text-align: right; }
+        section.resume div.work-history div.timeline-block.left div.inner div.arrow {
+          right: 0;
+          border-right-color: #c06b62;
+          border-left: 0; }
+      section.resume div.work-history div.timeline-block.left.special {
+        border-color: #46515d; }
+        section.resume div.work-history div.timeline-block.left.special div.inner div.arrow {
+          border-right-color: #46515d; }
+    section.resume div.work-history div.timeline-block.right {
+      margin-left: 50%;
+      border-left: 0.58em solid #e1a850; }
+      section.resume div.work-history div.timeline-block.right div.inner {
+        padding-left: 1.75em;
+        text-align: left; }
+        section.resume div.work-history div.timeline-block.right div.inner div.arrow {
+          left: 0;
+          border-left-color: #e1a850;
+          border-right: 0; }
+      section.resume div.work-history div.timeline-block.right.special {
+        border-color: #46515d; }
+        section.resume div.work-history div.timeline-block.right.special div.inner div.arrow {
+          border-left-color: #46515d; }
 
 @media (max-width: 1500px) {
   html body section.works div.works-list article {
