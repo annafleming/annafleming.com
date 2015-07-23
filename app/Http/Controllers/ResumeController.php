@@ -4,6 +4,9 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use App\PracticalSkill;
+use App\Category;
+use App\Skill;
 
 class ResumeController extends Controller {
 
@@ -14,7 +17,9 @@ class ResumeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('resume.index');
+        $practicalSkills = PracticalSkill::orderBy("order", "asc")->get(["name", "rank"]);
+        $categories = Category::splitInHalf();
+		return view('resume.index', compact('practicalSkills', 'categories'));
 	}
 
 	/**

@@ -12,6 +12,19 @@ class Skill extends Model {
 	protected $fillable = ['name', 'category_id', 'hidden'];
 
     /**
+     * Select resources with hidden=0
+     *
+     * @param  $query
+     * @return
+     */
+    public function scopeVisible($query)
+    {
+        return $query->where('skills.hidden', '=', 0)
+            ->join('categories', 'categories.id', '=', 'category_id')
+            ->where('categories.hidden', '=', 0);
+    }
+
+    /**
      * Sets order for the resource
      *
      */
@@ -58,5 +71,10 @@ class Skill extends Model {
     public function down()
     {
         return $this->moveDown([['category_id', $this->category_id]]);
+    }
+
+    static function countVisibleSkills()
+    {
+        return self::visible()->count();
     }
 }
