@@ -69,53 +69,29 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 })();
 
 $( document ).ready(function() {
+    var canvasSize = parseInt($('div.chart-container').css('width'));
+    $('canvas').attr('width', canvasSize);
+    $('canvas').attr('height', canvasSize);
 
-    var data = [
-        {
-            name: "Server/Network/Hosting",
-            rank: 8,
-            color: "#77a9ca"
-        },
-        {
-            name: "UI",
-            rank: 7,
-            color: "#95a5a6"
-
-        },
-        {
-            name: "UX",
-            rank: 9,
-            color: "#46515d"
-        },
-        {
-            name: "Data modeling",
-            rank: 4,
-            color: "#25a35a"
-        },
-        {
-            name: "Action Layer/MVC",
-            rank: 5,
-            color: "#c06b62"
-        },
-        {
-            name: "Business Logic",
-            rank: 6,
-            color: "#77a9ca"
-        }
-    ];
-
+    var colors = ["#77a9ca", "#95a5a6", "#46515d", "#25a35a", "#c06b62"];
+    var data = JSON.parse($('div#charData').text());
+    var colorIndex = 0;
+    for(var i=0; i < data.length; i++){
+        if (colors[colorIndex] === undefined)
+            colorIndex = 0;
+        data[i].color = colors[colorIndex];
+        colorIndex++;
+    }
     canvasChart.init(data);
     canvasChart.draw();
 
     $(window).resize( respondCanvas );
-
     function respondCanvas(){
-       // if ($('div.chart-container').width() < 680){
         var newWidth = parseInt($('div.chart-container').css('width'));
         var canvasWidth = $('canvas').attr('width');
         if (newWidth != canvasWidth){
-            console.log(newWidth);
-            console.log(canvasWidth);
+            $('canvas').attr('width', newWidth);
+            $('canvas').attr('height', newWidth);
             canvasChart.init(data);
             canvasChart.draw();
         }
@@ -131,7 +107,7 @@ var canvasChart = new function(){
         this.arcs = [];
         this.lineWidth = this.wh * 0.0529;
         this.marginRadius = this.lineWidth * 1.15;
-        this.radius = this.wh / 2 - this.marginRadius / 2;
+        this.radius = this.wh / 2 - this.lineWidth / 2;
         for (var i = 0; i < data.length; i++) {
             var s = this.arc(data[i]);
             s.r = this.radius;
@@ -164,7 +140,6 @@ var canvasChart = new function(){
     };
 
     this.draw =  function (){
-        console.log('REDRAW');
         this.drawStick();
         this.drawCircle();
         for(var i=0;i<this.arcs.length;i++){

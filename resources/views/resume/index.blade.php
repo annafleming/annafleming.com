@@ -14,11 +14,22 @@
                 </h1>
             </div>
         </header>
+        <div id="charData">{{ $practicalSkills }}</div>
         <div class="chart-container">
-            <canvas height="680" width="680"></canvas>
+            <canvas></canvas>
         </div>
         <div class="resume-body">
             <div class="v-line"></div>
+            <div class="skills-block left">
+                @if (!empty($categories['left']))
+                    @include('resume.partials.skillList', ['categories' => $categories['left']])
+                @endif
+            </div>
+            <div class="skills-block right">
+                @if (!empty($categories['right']))
+                    @include('resume.partials.skillList', ['categories' => $categories['right']])
+                @endif
+            </div>
         </div>
     </section>
 @endsection

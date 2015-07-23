@@ -30,6 +30,7 @@
             @include home-max-width-1100;
             @include works-max-width-1100;
             @include contact-max-width-1100;
+            @include resume-max-width-1100;
         }
     }
 }
@@ -40,6 +41,7 @@
             @include home-max-width-990;
             @include works-max-width-990;
             @include contact-max-width-990;
+            @include resume-max-width-990;
         }
     }
 }
@@ -49,6 +51,7 @@
         body {
             @include home-max-width-900;
             @include works-max-width-900;
+            @include resume-max-width-900;
         }
     }
 }
@@ -70,6 +73,7 @@
             @include home-max-width-665;
             @include works-max-width-665;
             @include contact-max-width-665;
+            @include resume-max-width-665;
         }
     }
 }
@@ -78,6 +82,7 @@
         body{
             @include works-max-width-399;
             @include contact-max-width-399;
+            @include resume-max-width-399;
         }
     }
 }
