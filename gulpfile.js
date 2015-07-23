@@ -22,6 +22,7 @@ elixir(function(mix) {
     mix.scripts([
         'vendor/jquery-2.1.4.min.js',
         'main.js',
+        'chart.js',
     ], null, 'public/js');
 
     mix.copy(

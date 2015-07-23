@@ -14,8 +14,11 @@
                 </h1>
             </div>
         </header>
+        <div class="chart-container">
+            <canvas height="680" width="680"></canvas>
+        </div>
         <div class="resume-body">
-            skills
+            <div class="v-line"></div>
         </div>
     </section>
 @endsection
