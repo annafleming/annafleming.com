@@ -16,6 +16,12 @@
   font-weight: normal; }
 
 @font-face {
+  font-family: "ProximaNovaSemibold";
+  src: url("fonts/ProximaNova-Sbold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
   font-family: "SerifGotic";
   src: url("fonts/itc-serif-gothic-lt-regular.ttf") format("truetype");
   font-style: normal;
@@ -456,28 +462,32 @@ section.resume div.chart-container {
     top: 0;
     right: 0; }
 
+section.resume div.v-line {
+  height: 100%;
+  width: 5px;
+  background-color: #46515d;
+  position: absolute;
+  top: 0;
+  right: 49.8%; }
+
 section.resume div.resume-body {
   width: 100%;
+  height: 100%;
   padding: 3.5em 17% 0 17%;
   position: relative; }
-  section.resume div.resume-body div.v-line {
-    height: 100%;
-    width: 5px;
-    background-color: #46515d;
-    position: absolute;
-    top: 0;
-    right: 49.8%; }
   section.resume div.resume-body div.skills-block {
     display: inline-block;
-    width: 49.5%;
     vertical-align: top;
+    padding-bottom: 4em;
     font-size: 1.17em; }
     section.resume div.resume-body div.skills-block.left {
       text-align: right;
-      padding-right: 1em; }
+      padding-right: 1em;
+      width: 50%; }
     section.resume div.resume-body div.skills-block.right {
       text-align: left;
-      padding-left: 1em; }
+      padding-left: 1em;
+      width: 48%; }
     section.resume div.resume-body div.skills-block h3 {
       font-size: 1.43em;
       text-transform: uppercase;
@@ -492,6 +502,46 @@ section.resume div.resume-body {
         font-family: ProximaNovaLight;
         color: #333333;
         line-height: 1.3em; }
+
+section.resume div.currently-learning-head {
+  clear: both;
+  font-size: 3em;
+  text-align: center; }
+  section.resume div.currently-learning-head span {
+    display: inline-block;
+    color: #46515d;
+    text-transform: uppercase;
+    font-family: SerifGotic;
+    font-size: 1em;
+    padding: 0.2em;
+    border: 3px solid #46515d; }
+
+section.resume div.currently-learning-block {
+  position: relative;
+  font-size: 1.67em;
+  text-align: center; }
+  section.resume div.currently-learning-block div.image-block {
+    width: 7.25em;
+    margin: 0 auto;
+    position: relative;
+    height: 15em; }
+    section.resume div.currently-learning-block div.image-block img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 2em;
+      right: 0; }
+    section.resume div.currently-learning-block div.image-block div.book-cover {
+      width: 82.75%;
+      position: absolute;
+      top: 2.7em;
+      right: 0;
+      color: #9a564e;
+      text-transform: uppercase;
+      font-family: ProximaNovaSemibold; }
+
+section.resume div.work-history {
+  background-color: #83b9dc; }
 
 @media (max-width: 1500px) {
   html body section.works div.works-list article {
@@ -538,7 +588,11 @@ section.resume div.resume-body {
     width: 0.8em;
     height: 0.8em; }
   html body section.resume div.resume-body {
-    padding: 3.5em 7% 0 7%; } }
+    padding: 3.5em 7% 0 7%; }
+  html body section.resume div.currently-learning-head {
+    font-size: 2.5em; }
+  html body section.resume div.currently-learning-block {
+    font-size: 1.3em; } }
 
 @media (max-width: 990px) {
   html body aside.about-me div.about-me-block div.about-me-photo {
@@ -607,7 +661,13 @@ section.resume div.resume-body {
   html body section.resume div.resume-body {
     padding: 2em 1% 0 1%; }
     html body section.resume div.resume-body div.skills-block {
-      font-size: 1em; } }
+      font-size: 0.8em; }
+      html body section.resume div.resume-body div.skills-block h3 {
+        font-size: 1.3em; }
+  html body section.resume div.currently-learning-head {
+    font-size: 2em; }
+  html body section.resume div.currently-learning-block {
+    font-size: 1em; } }
 
 @media (max-width: 665px) {
   html body .headerBlock {
@@ -667,7 +727,9 @@ section.resume div.resume-body {
     font-size: 2em; }
   html body section.resume div.chart-container {
     width: 0.52em;
-    height: 0.52em; } }
+    height: 0.52em; }
+  html body section.resume div.currently-learning-head {
+    font-size: 1.5em; } }
 
 @media (max-width: 399px) {
   html body section.works div.works-list article {
@@ -687,7 +749,11 @@ section.resume div.resume-body {
     font-size: 1.8em; }
   html body section.resume div.chart-container {
     width: 0.4em;
-    height: 0.4em; } }
+    height: 0.4em; }
+  html body section.resume div.resume-body div.skills-block {
+    font-size: 0.6em; }
+  html body section.resume div.currently-learning-head {
+    font-size: 1em; } }
 
 @media (min-width: 1500px) {
   html body section.works div.works-list article {

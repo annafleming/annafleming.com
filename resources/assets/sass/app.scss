@@ -2,7 +2,7 @@
 @import "partials/colors";
 
 $hfHeight : 115px;
-
+$backgroundColor: #e1a850;
 
 html {
     position: relative;
@@ -33,7 +33,7 @@ html {
             clear: both;
         }
         main {
-            background-color: #e1a850;
+            background-color: $backgroundColor;
             height: auto;
             min-height: 100%;
             padding-bottom: $hfHeight;
