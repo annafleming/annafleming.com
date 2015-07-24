@@ -149,83 +149,118 @@ section.resume {
             }
         }
     }
-    div.work-history{
+    div.lower-block {
         background-color: #83b9dc;
-        position: relative;
-        font-size: 1em;
-        font-family: ProximaNovaLight;
-        color: #46515d;
-        div.timeline-block {
-            display: inline-block;
-            width: 50%;
-            div.inner {
-                position: relative;
-                div.arrow {
-                    position: absolute;
-                    top: 50%;
-                    width: 0;
-                    height: 0;
-                    border: 1em solid transparent;
-                    margin-top: -1em;
+        padding-bottom: 8em;
+        div.work-history {
+            position: relative;
+            font-size: 1em;
+            font-family: ProximaNovaLight;
+            color: #46515d;
+            margin-bottom: 270px;
+            div.timeline-block {
+                width: 50%;
+                div.inner {
+                    position: relative;
+                    padding: 0 1.75em;
+                    div.arrow {
+                        position: absolute;
+                        top: 50%;
+                        width: 0;
+                        height: 0;
+                        border: 1em solid transparent;
+                        margin-top: -1em;
+                    }
+                    div.inner-content {
+                        display: inline-block;
+                        position: absolute;
+                        top: 40%;
+                        h4 {
+                            text-transform: capitalize;
+                            font-size: 1.5em;
+                            font-family: SerifGotic;
+                        }
+                        p {
+                            margin: 0;
+                            line-height: 1.2em;
+                        }
+                        p.timeline-date {
+                            font-family: ProximaNovaThin;
+                        }
+                    }
                 }
-                div.inner-content{
+                &.left {
+                    border-right: 0.58em solid #c06b62;
+                    div.inner {
+                        //padding-right: 1.75em;
+                        text-align: right;
+                        div.arrow {
+                            right: 0;
+                            border-right-color: #c06b62;
+                            border-left: 0;
+                        }
+                        div.inner-content {
+                            right: 1.5em;
+                        }
+                    }
+                    &.special {
+                        border-color: #46515d;
+                        div.inner {
+                            div.arrow {
+                                border-right-color: #46515d;
+                            }
+                        }
+                    }
+                }
+                &.right {
+                    margin-left: 50%;
+                    border-left: 0.58em solid #e1a850;
+                    div.inner {
+                        //padding-left: 1.75em;
+                        text-align: left;
+                        div.arrow {
+                            left: 0;
+                            border-left-color: #e1a850;
+                            border-right: 0;
+                        }
+                        div.inner-content {
+                            left: 1.5em;
+                        }
+                    }
+                    &.special {
+                        border-color: #46515d;
+                        div.inner {
+                            div.arrow {
+                                border-left-color: #46515d;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        div.languages {
+            background-color: #83b9dc;
+            text-align: center;
+            h3{
+                font-size: 1.5em;
+                font-family: SerifGotic;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 1.6em;
+            }
+            div.language-list {
+                div.language-block {
                     display: inline-block;
-                    margin-top: 20%;
-                    h4{
-                        text-transform: capitalize;
-                        font-size: 1.5em;
-                        font-family: SerifGotic;
+                    margin-left: 6.33%;
+                    h4 {
+                        font-family: ProximaNovaLight;
                     }
-                    p{
-                        margin: 0;
-                        line-height: 1.2em;
-                    }
-                    p.timeline-date{
-                        font-family: ProximaNovaThin;
+                    &:first-child {
+                        margin-left: 0;
                     }
                 }
             }
-            &.left {
-                border-right: 0.58em solid #c06b62;
-                div.inner {
-                    padding-right: 1.75em;
-                    text-align: right;
-                    div.arrow {
-                        right: 0;
-                        border-right-color: #c06b62;
-                        border-left: 0;
-                    }
-                }
-                &.special{
-                    border-color: #46515d;
-                    div.inner{
-                        div.arrow{
-                            border-right-color:#46515d;
-                        }
-                    }
-                }
-            }
-            &.right {
-                margin-left: 50%;
-                border-left: 0.58em solid #e1a850;
-                div.inner {
-                    padding-left: 1.75em;
-                    text-align: left;
-                    div.arrow {
-                        left: 0;
-                        border-left-color: #e1a850;
-                        border-right: 0;
-                    }
-                }
-                &.special{
-                    border-color: #46515d;
-                    div.inner{
-                        div.arrow{
-                            border-left-color:#46515d;
-                        }
-                    }
-                }
-            }
+
         }
     }
 }
@@ -303,6 +338,11 @@ section.resume {
         div.currently-learning-head{
             font-size: 1.5em;
         }
+        div.lower-block {
+            div.work-history {
+                font-size: 0.8em;
+            }
+        }
     }
 }
 
@@ -319,6 +359,18 @@ section.resume {
         }
         div.currently-learning-head{
             font-size: 1em;
+        }
+        div.lower-block {
+            div.work-history {
+                font-size: 0.7em;
+            }
+            div.languages {
+                div.language-list {
+                    div.language-block {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }

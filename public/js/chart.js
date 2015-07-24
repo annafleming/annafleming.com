@@ -80,7 +80,7 @@ var canvasChart = new function(){
         }
 
         this.ctx.fillStyle = "#353535";
-        this.ctx.font = 0.8*this.lineWidth+"px/"+0.8*this.lineWidth+"px Arial";
+        this.ctx.font = 0.8*this.lineWidth+"px/"+0.8*this.lineWidth+"px ProximaNovaLight";
 
         for(var i=0;i<this.arcs.length;i++){
             textPosition = this.wh/2  - this.arcs[i].r+this.lineWidth/3;
