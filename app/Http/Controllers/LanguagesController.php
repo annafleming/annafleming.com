@@ -45,10 +45,11 @@ class LanguagesController extends Controller {
 	{
         $this->validate($request, [
             'name' => 'required',
-            'rank' => 'required|integer',
+            'image' => 'mimes:jpg,png,gif',
         ]);
         $language = $this->language->fill($request->all());
         $language->setOrder();
+        $language->manageImage($request->file('image'));
         $language->save();
         return redirect('languages');
 	}
@@ -75,10 +76,11 @@ class LanguagesController extends Controller {
 	{
         $this->validate($request, [
             'name' => 'required',
-            'rank' => 'required|integer',
+            'image' => 'mimes:jpg,png,gif',
         ]);
         $language =  $this->language->findOrFail($id);
         $language->fill($request->all());
+        $language->manageImage($request->file('image'));
         $language->update();
         return redirect('languages');
 	}
@@ -92,6 +94,7 @@ class LanguagesController extends Controller {
 	public function destroy($id)
 	{
         $language =  $this->language->findOrFail($id);
+        $language->deleteImage();
         return ($language->delete()) ? 1 : 0;
 	}
 

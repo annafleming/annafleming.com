@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLanguagesTable extends Migration {
+class CreateHistoriesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,16 @@ class CreateLanguagesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('languages', function(Blueprint $table)
+		Schema::create('histories', function(Blueprint $table)
 		{
 			$table->increments('id');
             $table->string('name');
-            $table->string('image');
+            $table->string('description');
+            $table->string('period');
+            $table->tinyInteger('length');
             $table->tinyInteger('order');
             $table->tinyInteger('hidden')->default(0);
+            $table->tinyInteger('special')->default(0);
 			$table->timestamps();
 		});
 	}
@@ -30,7 +33,7 @@ class CreateLanguagesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('languages');
+		Schema::drop('histories');
 	}
 
 }

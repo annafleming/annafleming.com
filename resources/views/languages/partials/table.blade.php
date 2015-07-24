@@ -3,7 +3,7 @@
     <tr>
         <th>Visibility</th>
         <th>Name</th>
-        <th>Rank</th>
+        <th>Image</th>
         <th>Move</th>
         <th></th>
     </tr>
@@ -13,7 +13,11 @@
         <tr>
             <td>{{ ($language->hidden) ? 'Hidden' : 'Visible'}}</td>
             <td>{{ $language->name }}</td>
-            <td>{{ $language->rank }}</td>
+            <td>
+                @if ($language->isImageExists())
+                    {!! Html::image($language->getImagePath(), $language->name, ['class' => 'img-responsive'] ) !!}
+                @endif
+            </td>
             <td>
                 {!! link_to ("languages/move/$language->id/up", '⬆', ['class' => 'btn btn-success
                 item-ajax-move btn-sm']) !!}

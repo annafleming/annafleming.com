@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\PracticalSkill;
 use App\Category;
 use App\Skill;
+use App\Language;
+use App\History;
 
 class ResumeController extends Controller {
 
@@ -19,7 +21,9 @@ class ResumeController extends Controller {
 	{
         $practicalSkills = PracticalSkill::orderBy("order", "asc")->get(["name", "rank"]);
         $categories = Category::splitInHalf();
-		return view('resume.index', compact('practicalSkills', 'categories'));
+        $languages = Language::visible()->get();
+        $records = History::visible()->get();
+		return view('resume.index', compact('practicalSkills', 'categories', 'languages', 'records'));
 	}
 
 	/**

@@ -46,7 +46,7 @@ class WorksController extends Controller {
 	public function store(PrepareWorkRequest $workRequest)
 	{
         $work = $this->work->fill($workRequest->all());
-        $work->manageWorkImage($workRequest->file('image'));
+        $work->manageImage($workRequest->file('image'));
         $work->save();
         return redirect('works/manage');
 
@@ -74,7 +74,7 @@ class WorksController extends Controller {
 	{
         $work = $this->work->findOrFail($id);
         $work->fill($workRequest->all());
-        $work->manageWorkImage($workRequest->file('image'));
+        $work->manageImage($workRequest->file('image'));
         $work->update();
         return redirect('works/manage');
 	}

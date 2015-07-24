@@ -9,10 +9,12 @@
     {!! Form::text('name', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Rank Form Input -->
 <div class="form-group">
-    {!! Form::label('rank', 'Rank:') !!}
-    {!! Form::text('rank', null, ['class' => 'form-control']) !!}
+    {!! Form::label('image', 'Image:') !!}
+    {!! Form::file('image', null, ['class' => 'form-control']) !!}
+    @if ($language->isImageExists())
+        {!! Html::image($language->getImagePath(), $language->name, ['class' => 'img-responsive'] ) !!}
+    @endif
 </div>
 
 <!-- Hidden Form Input -->

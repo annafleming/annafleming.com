@@ -6,5 +6,6 @@
         <li>{!! link_to('practical', 'Practical skills') !!}</li>
         <li>{!! link_to('skills', 'Skills') !!}</li>
         <li>{!! link_to('languages', 'Languages') !!}</li>
+        <li>{!! link_to('history', 'History') !!}</li>
     </ul>
 </div>

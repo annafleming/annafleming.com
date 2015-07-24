@@ -1,5 +1,5 @@
 
-{!! Form::model($skill, ['method' => $method, 'action' => $action, 'files' => true]) !!}
+{!! Form::model($skill, ['method' => $method, 'action' => $action]) !!}
 
 <!-- Image Form Input -->
 

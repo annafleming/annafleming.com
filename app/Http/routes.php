@@ -31,6 +31,10 @@ Route::get('/skills/move/{id}/{direction}', 'SkillsController@move')->where('dir
 Route::resource('languages', 'LanguagesController', array('except' => array('show')));
 Route::get('/languages/move/{id}/{direction}', 'LanguagesController@move')->where('direction', 'up|down');
 
+Route::resource('history', 'HistoryController', array('except' => array('show')));
+Route::get('/history/move/{id}/{direction}', 'HistoryController@move')->where('direction', 'up|down');
+
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
