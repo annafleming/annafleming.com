@@ -39,7 +39,7 @@
             <div class="image-block">
                 <img src="/images/book.png" alt="Book"/>
 
-                <div class="book-cover">DATA <br/>Analytics <br/>+ <br/>PYTHON</div>
+                <div class="book-cover">{!! $configs['currently-learning'] !!}</div>
             </div>
 
         </div>
@@ -69,7 +69,7 @@
                     @if (!empty($languages))
                         @foreach($languages as $language)
                             <div class="language-block">
-                                <img src="{{ $language->getImagePath() }}" alt="{{$language->name}}"/>
+                                <img src="{{ $language->getFilePath() }}" alt="{{$language->name}}"/>
                                 <h4>{{$language->name}}</h4>
                             </div>
                         @endforeach

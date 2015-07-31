@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+
+    if ($('div.chart-container').length == 0 )
+        return 0;
+
     var canvasSize = parseInt($('div.chart-container').css('width'));
     $('canvas').attr('width', canvasSize);
     $('canvas').attr('height', canvasSize);

@@ -37,8 +37,8 @@
 <div class="form-group">
     {!! Form::label('image', 'Image:') !!}
     {!! Form::file('image', null, ['class' => 'form-control']) !!}
-    @if ($work->isImageExists())
-        {!! Html::image($work->getImagePath(), $work->name, ['class' => 'img-responsive'] ) !!}
+    @if ($work->isFileExists())
+        {!! Html::image($work->getFilePath(), $work->name, ['class' => 'img-responsive'] ) !!}
     @endif
 </div>
 

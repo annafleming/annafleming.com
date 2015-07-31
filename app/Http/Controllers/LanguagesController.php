@@ -49,7 +49,7 @@ class LanguagesController extends Controller {
         ]);
         $language = $this->language->fill($request->all());
         $language->setOrder();
-        $language->manageImage($request->file('image'));
+        $language->manageFile($request->file('image'));
         $language->save();
         return redirect('languages');
 	}
@@ -80,7 +80,7 @@ class LanguagesController extends Controller {
         ]);
         $language =  $this->language->findOrFail($id);
         $language->fill($request->all());
-        $language->manageImage($request->file('image'));
+        $language->manageFile($request->file('image'));
         $language->update();
         return redirect('languages');
 	}
@@ -94,7 +94,7 @@ class LanguagesController extends Controller {
 	public function destroy($id)
 	{
         $language =  $this->language->findOrFail($id);
-        $language->deleteImage();
+        $language->deleteFile();
         return ($language->delete()) ? 1 : 0;
 	}
 

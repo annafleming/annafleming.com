@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Email;
+use App\Config;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -17,7 +18,8 @@ class ContactController extends Controller {
 	 */
 	public function index()
 	{
-		return view('contact.index');
+        $configs = Config::getConfigs(['linkedin']);
+		return view('contact.index', compact('configs'));
 	}
 
     /**

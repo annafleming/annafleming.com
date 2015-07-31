@@ -14,8 +14,8 @@
             <td>{{ ($language->hidden) ? 'Hidden' : 'Visible'}}</td>
             <td>{{ $language->name }}</td>
             <td>
-                @if ($language->isImageExists())
-                    {!! Html::image($language->getImagePath(), $language->name, ['class' => 'img-responsive'] ) !!}
+                @if ($language->isFileExists())
+                    {!! Html::image($language->getFilePath(), $language->name, ['class' => 'img-responsive'] ) !!}
                 @endif
             </td>
             <td>

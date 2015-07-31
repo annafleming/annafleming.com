@@ -34,6 +34,8 @@ Route::get('/languages/move/{id}/{direction}', 'LanguagesController@move')->wher
 Route::resource('history', 'HistoryController', array('except' => array('show')));
 Route::get('/history/move/{id}/{direction}', 'HistoryController@move')->where('direction', 'up|down');
 
+Route::resource('config', 'ConfigController', array('except' => array('show')));
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

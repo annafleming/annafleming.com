@@ -9,6 +9,7 @@ use App\Category;
 use App\Skill;
 use App\Language;
 use App\History;
+use App\Config;
 
 class ResumeController extends Controller {
 
@@ -23,7 +24,8 @@ class ResumeController extends Controller {
         $categories = Category::splitInHalf();
         $languages = Language::visible()->get();
         $records = History::visible()->get();
-		return view('resume.index', compact('practicalSkills', 'categories', 'languages', 'records'));
+        $configs = Config::getConfigs(['currently-learning']);
+		return view('resume.index', compact('practicalSkills', 'categories', 'languages', 'records', 'configs'));
 	}
 
 	/**

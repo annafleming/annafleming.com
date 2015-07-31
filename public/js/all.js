@@ -66,9 +66,24 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
             el.remove();
         });
     });
+
+    $('select.managing-select').on('change',function(e){
+        var value = $(this).val();
+        $('.toggle-field').prop( "disabled", true);
+        $('.toggle-block').hide();
+        $('.toggle-field').val('');
+
+        $('.toggle-block.' + value + ' .toggle-field').removeAttr("disabled");
+        $('.toggle-block.'+ value).show();
+    });
+
 })();
 
 $( document ).ready(function() {
+
+    if ($('div.chart-container').length == 0 )
+        return 0;
+
     var canvasSize = parseInt($('div.chart-container').css('width'));
     $('canvas').attr('width', canvasSize);
     $('canvas').attr('height', canvasSize);

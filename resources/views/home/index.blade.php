@@ -28,13 +28,12 @@
         </div>
         <div class="about-me-block">
             <div class="about-me-photo">
-                <img src="/images/my-photo.png" alt="My photo"/>
+                <img src="{{ $configs['my-photo'] }}" alt="My photo"/>
             </div>
             <div class="about-me-text">
-                <h3>Proin gravida nibh vel velit</h3>
+                <h3>{!! $configs['about-me-head'] !!}</h3>
                 <p>
-                    auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Duis sed odio sit amet nibh vulputate cursus.
-                </p>
+                    {!! $configs['about-me-body'] !!}</p>
             </div>
         </div>
     </aside>

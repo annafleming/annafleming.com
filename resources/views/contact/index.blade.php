@@ -45,8 +45,10 @@
 
         {!! Form::close() !!}
         <footer>
-            <p>You can also visit me on</p>
-            <p>{!! link_to('https://www.linkedin.com/in/annaafleming', 'LinkedIn') !!}.</p>
+            @if($configs['linkedin'])
+                <p>You can also visit me on</p>
+                <p>{!! link_to($configs['linkedin'], 'LinkedIn') !!}.</p>
+            @endif
         </footer>
     </section>
 @endsection

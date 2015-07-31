@@ -61,4 +61,15 @@
             el.remove();
         });
     });
+
+    $('select.managing-select').on('change',function(e){
+        var value = $(this).val();
+        $('.toggle-field').prop( "disabled", true);
+        $('.toggle-block').hide();
+        $('.toggle-field').val('');
+
+        $('.toggle-block.' + value + ' .toggle-field').removeAttr("disabled");
+        $('.toggle-block.'+ value).show();
+    });
+
 })();

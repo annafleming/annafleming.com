@@ -4,13 +4,13 @@ use Illuminate\Database\Eloquent\Model;
 use App\Traits\SwapModelRows;
 use App\Traits\SetOrderValue;
 use App\Traits\ConditionManagement;
-use App\Traits\ImageManaging;
+use App\Traits\FileManaging;
 
 class Language extends Model{
 
-    protected $fillable = ['name', 'image', 'hidden'];
+    protected $fillable = ['name', 'hidden'];
 
-    use SwapModelRows, SetOrderValue, ConditionManagement, ImageManaging;
+    use SwapModelRows, SetOrderValue, ConditionManagement, FileManaging;
 
     /**
      * Select resources with hidden=0

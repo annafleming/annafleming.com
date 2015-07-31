@@ -14,7 +14,7 @@
                         {{ $work->name }}
                     </div>
                     @if ($work->image)
-                        <img src="{{ $work->getImagePath() }}" />
+                        <img src="{{ $work->getFilePath() }}" />
                     @endif
                     <div class="work-info" style="{{($work->image) ? 'display:none': ''}}">
                         {{ $work->description }}

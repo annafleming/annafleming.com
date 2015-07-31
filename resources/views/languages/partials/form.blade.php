@@ -12,8 +12,8 @@
 <div class="form-group">
     {!! Form::label('image', 'Image:') !!}
     {!! Form::file('image', null, ['class' => 'form-control']) !!}
-    @if ($language->isImageExists())
-        {!! Html::image($language->getImagePath(), $language->name, ['class' => 'img-responsive'] ) !!}
+    @if ($language->isFileExists())
+        {!! Html::image($language->getFilePath(), $language->name, ['class' => 'img-responsive'] ) !!}
     @endif
 </div>
 

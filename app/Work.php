@@ -2,11 +2,11 @@
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
-use App\Traits\ImageManaging;
+use App\Traits\FileManaging;
 
 class Work extends Model {
 
-    use ImageManaging;
+    use FileManaging;
 
     protected $fillable = ['link', 'name', 'description', 'my_role', 'hidden'];
 
