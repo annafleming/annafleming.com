@@ -17,6 +17,7 @@
         <div id="charData">{{ $practicalSkills }}</div>
         <div class="chart-container">
             <canvas></canvas>
+            <h2>SKILLS</h2>
         </div>
         <div class="resume-body">
             <div class="v-line"></div>

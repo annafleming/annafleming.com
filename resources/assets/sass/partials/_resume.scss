@@ -55,6 +55,14 @@ section.resume {
         height: 1em;
         margin: 0.2em auto 0;
         position: relative;
+        h2{
+            font-size: 0.07em;
+            font-family: SerifGotic;
+            text-transform: uppercase;
+            position: absolute;
+            top: 6.64em;
+            left: 5.8em;
+        }
         canvas {
             position: absolute;
             top: 0;
@@ -271,8 +279,9 @@ section.resume {
             font-size: 5em;
         }
         div.chart-container {
-            width: 0.8em;
-            height: 0.8em;
+            font-size: 23.2em;
+           // width: 0.8em;
+           // height: 0.8em;
         }
         div.resume-body {
             padding: 3.5em 7% 0 7%;
@@ -305,8 +314,9 @@ section.resume {
 @mixin resume-max-width-790 {
     section.resume {
         div.chart-container {
-            width: 0.7em;
-            height: 0.7em;
+            font-size: 20.3em;
+            //width: 0.7em;
+            //height: 0.7em;
         }
         div.resume-body {
             padding: 2em 1% 0 1%;
@@ -332,8 +342,9 @@ section.resume {
             font-size: 2em;
         }
         div.chart-container {
-            width: 0.52em;
-            height: 0.52em;
+            font-size: 15.08em;
+            //width: 0.52em;
+            //height: 0.52em;
         }
         div.currently-learning-head{
             font-size: 1.5em;
@@ -349,8 +360,9 @@ section.resume {
 @mixin resume-max-width-399{
     section.resume {
         div.chart-container {
-            width: 0.4em;
-            height: 0.4em;
+            font-size: 11.6em;
+            //width: 0.4em;
+            //height: 0.4em;
         }
         div.resume-body {
             div.skills-block{

@@ -457,6 +457,13 @@ section.resume div.chart-container {
   height: 1em;
   margin: 0.2em auto 0;
   position: relative; }
+  section.resume div.chart-container h2 {
+    font-size: 0.07em;
+    font-family: SerifGotic;
+    text-transform: uppercase;
+    position: absolute;
+    top: 6.64em;
+    left: 5.8em; }
   section.resume div.chart-container canvas {
     position: absolute;
     top: 0;
@@ -662,8 +669,7 @@ section.resume div.lower-block {
   html body section.resume header {
     font-size: 5em; }
   html body section.resume div.chart-container {
-    width: 0.8em;
-    height: 0.8em; }
+    font-size: 23.2em; }
   html body section.resume div.resume-body {
     padding: 3.5em 7% 0 7%; }
   html body section.resume div.currently-learning-head {
@@ -733,8 +739,7 @@ section.resume div.lower-block {
       width: 300px;
       height: 300px; }
   html body section.resume div.chart-container {
-    width: 0.7em;
-    height: 0.7em; }
+    font-size: 20.3em; }
   html body section.resume div.resume-body {
     padding: 2em 1% 0 1%; }
     html body section.resume div.resume-body div.skills-block {
@@ -803,8 +808,7 @@ section.resume div.lower-block {
   html body section.resume header {
     font-size: 2em; }
   html body section.resume div.chart-container {
-    width: 0.52em;
-    height: 0.52em; }
+    font-size: 15.08em; }
   html body section.resume div.currently-learning-head {
     font-size: 1.5em; }
   html body section.resume div.lower-block div.work-history {
@@ -827,8 +831,7 @@ section.resume div.lower-block {
   html body section.contact footer {
     font-size: 1.8em; }
   html body section.resume div.chart-container {
-    width: 0.4em;
-    height: 0.4em; }
+    font-size: 11.6em; }
   html body section.resume div.resume-body div.skills-block {
     font-size: 0.6em; }
   html body section.resume div.currently-learning-head {
