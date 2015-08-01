@@ -1,4 +1,5 @@
 section.resume {
+    color: #34495e;
     header {
         background: #83b9dc;
         background: repeating-linear-gradient(
@@ -6,7 +7,7 @@ section.resume {
                         #7aacce,
                         #83b9dc 50%
         );
-        font-size: 5.83em;
+        font-size: 5em;
         width: 100%;
         height: 4em;
         div.header-block{
@@ -50,7 +51,7 @@ section.resume {
         display: none;
     }
     div.chart-container {
-        font-size: 29em;
+        font-size: 28em;
         width: 1em;
         height: 1em;
         margin: 0.2em auto 0;
@@ -118,7 +119,7 @@ section.resume {
     }
     div.currently-learning-head{
         clear: both;
-        font-size: 3em;
+        font-size: 2.6em;
         text-align: center;
         span {
             display: inline-block;
