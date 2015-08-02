@@ -29,11 +29,14 @@ class ContactController extends Controller {
      */
     public function store(SendEmailRequest $emailRequest)
     {
-        $email = Email::create($emailRequest->all());
-        Mail::queue('emails.contact',  $email->attributesToArray(), function ($message) use ($email) {
-            $message->to(env('MAIL_USERNAME'))->subject($email->subject)->replyTo($email->email);
-        });
-        Flash::message('Your email has been sent. Thank you!');
+        $values = $emailRequest->all();
+        if ($values['birthday'] === ''){
+            $email = Email::create($values);
+            Mail::queue('emails.contact',  $email->attributesToArray(), function ($message) use ($email) {
+                $message->to(env('MAIL_USERNAME'))->subject($email->subject)->replyTo($email->email);
+            });
+            Flash::message('Your email has been sent. Thank you!');
+        }
         return redirect('contact');
     }
 	/**

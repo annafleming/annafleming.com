@@ -312,6 +312,8 @@ section.contact {
       margin-right: -0.8em; }
       section.contact div.contact-body h2 span {
         font-family: SerifGoticBlack; }
+    section.contact div.contact-body div.special-field {
+      display: none; }
     section.contact div.contact-body div.contact-form {
       display: inline-block;
       width: 60.1%;
@@ -399,6 +401,8 @@ section.contact {
       border-radius: 50%;
       overflow: hidden;
       border: 0.167em solid #9a564e; }
+      section.contact div.contact-body input.contact-submit:focus {
+        outline: none; }
   section.contact footer {
     text-align: center;
     width: 100%;

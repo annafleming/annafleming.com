@@ -39,6 +39,11 @@
                 </div>
             </div>
 
+            <div class="special-field">
+                <label for="birthday">Birthday</label>
+                <input type="text" name="birthday" id="birthday" value="" />
+            </div>
+
             {!! Form::submit('Send', ['class' => 'contact-submit']) !!}
 
         </div>

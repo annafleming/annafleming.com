@@ -47,6 +47,9 @@ section.contact{
             }
             margin-right: -0.8em;
         }
+        div.special-field{
+            display: none;
+        }
         div.contact-form{
             display: inline-block;
             width: 60.1%;
@@ -153,6 +156,9 @@ section.contact{
             border-radius: 50%;
             overflow: hidden;
             border: 0.167em solid #9a564e;
+            &:focus {
+                outline: none;
+            }
         }
     }
     footer{
