@@ -18,7 +18,8 @@
                     @endif
                     <div class="work-info" style="{{($work->image) ? 'display:none': ''}}">
                         {{ $work->description }}
-                        {{ $work->description }}
+                        <br/><br/>/role/<br/><br/>
+                        {{ $work->my_role }}
                     </div>
                 </article>
             @endforeach

@@ -16,8 +16,10 @@ $( document ).ready(function() {
         data[i].color = colors[colorIndex];
         colorIndex++;
     }
-    canvasChart.init(data);
-    canvasChart.draw();
+    setTimeout(function() {
+        canvasChart.init(data);
+        canvasChart.draw();
+    }, 20);
 
     $(window).resize( respondCanvas );
     function respondCanvas(){

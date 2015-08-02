@@ -238,6 +238,7 @@ section.works {
         width: 100% !important;
         height: auto !important; }
       section.works div.works-list article div.work-info {
+        text-align: left;
         position: absolute;
         top: 0;
         left: 0;
@@ -245,8 +246,8 @@ section.works {
         height: 100%;
         overflow-y: scroll;
         background-color: #9ac6e3;
-        font-size: 1em;
-        line-height: 0.9em;
+        font-size: 0.9em;
+        line-height: 1.2em;
         padding: 30px 4.7%; }
 
 div#adminPanel {
@@ -523,12 +524,12 @@ section.resume {
   section.resume div.currently-learning-head {
     clear: both;
     font-size: 2.6em;
-    text-align: center; }
+    text-align: center;
+    font-family: SerifGotic; }
     section.resume div.currently-learning-head span {
       display: inline-block;
       color: #46515d;
       text-transform: uppercase;
-      font-family: SerifGotic;
       font-size: 1em;
       padding: 0.2em;
       border: 3px solid #46515d; }

@@ -66,6 +66,7 @@ section.works{
                 height: auto !important;
             }
             div.work-info{
+                text-align: left;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -73,8 +74,8 @@ section.works{
                 height: 100%;
                 overflow-y: scroll;
                 background-color: #9ac6e3;
-                font-size: 1em;
-                line-height: 0.9em;
+                font-size: 0.9em;
+                line-height: 1.2em;
                 padding: 30px 4.7%;
             }
 
