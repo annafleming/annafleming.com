@@ -10,6 +10,7 @@ use App\Skill;
 use App\Language;
 use App\History;
 use App\Config;
+use Illuminate\Http\Response;
 
 class ResumeController extends Controller {
 
@@ -24,10 +25,24 @@ class ResumeController extends Controller {
         $categories = Category::splitInHalf();
         $languages = Language::visible()->get();
         $records = History::visible()->get();
-        $configs = Config::getConfigs(['currently-learning']);
+        $configs = Config::getConfigs(['currently-learning', 'resume']);
 		return view('resume.index', compact('practicalSkills', 'categories', 'languages', 'records', 'configs'));
 	}
 
+    /**
+     * Download resume file
+     *
+     * @return Response
+     */
+
+    public function download()
+    {
+        $configs = Config::getConfigs(['resume']);
+        if ($configs['resume'])
+            return response()->download($configs['resume'], 'Resume.docx');
+        else
+            redirect('cv');
+    }
 	/**
 	 * Show the form for creating a new resource.
 	 *

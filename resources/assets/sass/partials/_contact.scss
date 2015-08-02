@@ -60,6 +60,9 @@ section.contact{
                 border: 9px solid #6e9bba;
                 padding: 0 2.15%;
                 text-align: left;
+                &.error{
+                    border-color: #9a564e;
+                }
                 label{
                     font-size: 1em;
                     line-height: 1em;
@@ -118,6 +121,14 @@ section.contact{
                     width: 100%;
                     height: 100%;
                     position: relative;
+                    div.error-message{
+                        font-size: 0.387em;
+                        color: #9a564e;
+                        font-family: ProximaNovaSemibold;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
                 }
             }
         }

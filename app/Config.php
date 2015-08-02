@@ -19,7 +19,7 @@ class Config extends Model {
             $this->manageFile($file, 'value');
     }
 
-    static function getConfigs($names)
+    static function getConfigs($names, $path = 'local')
     {
         if (empty($names))
             return [];
@@ -31,7 +31,14 @@ class Config extends Model {
 
         $result = array();
         foreach ($configs as $config)
-            $result[$config->name] = ($config->field_type == 'text') ? nl2br($config->value) : $config->getFilePath('value');
+            if ($config->field_type == 'text')
+                $result[$config->name] = nl2br($config->value);
+            elseif ($path == 'real') {
+                $result[$config->name] = $config->getFilePath('value');
+            }
+            else {
+                $result[$config->name] = $config->getFileRealPath('value').$config->value;
+            }
         return $result;
 
     }

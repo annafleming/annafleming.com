@@ -14,6 +14,8 @@
 Route::get('/', 'HomeController@index');
 
 Route::resource('contact', 'ContactController');
+
+Route::get('/cv/download', 'ResumeController@download');
 Route::resource('cv', 'ResumeController');
 
 Route::resource('works', 'WorksController', array('except' => array('show')));

@@ -6,9 +6,6 @@
             <h1><span>Let's</span>talk</h1>
         </header>
         {!! Form::open(['method' => 'POST', 'action' => 'ContactController@store']) !!}
-        <div>
-            @include('partials.errors')
-        </div>
         <div class="contact-body">
             <div class="message-success">
                 @include('flash::message')
@@ -16,22 +13,25 @@
             <h2><span>Make</span> your calling card</h2>
 
             <div class="contact-form">
-                <div class="form-block email-block">
+                <div class="form-block email-block {{ ($errors->first('email')) ? 'error' : '' }}">
                     <div class="form-block-inside">
+                        <div class="error-message">{{ $errors->first('email') }}</div>
                         <label for="email">E<span>mail</span></label>
                         {!! Form::email('email', null, ['placeholder' => 'theDude@email.com']) !!}
                         <label class="upsidedown" for="email">E<span>mail</span></label>
                     </div>
                 </div>
-                <div class="form-block subject-block">
+                <div class="form-block subject-block {{ ($errors->first('subject')) ? 'error' : '' }}">
                     <div class="form-block-inside">
+                        <div class="error-message">{{ $errors->first('subject') }}</div>
                         <label for="subject">S<span>ubject</span></label>
                         {!! Form::text('subject', null, ['placeholder' => 'You’re magical']) !!}
                         <label class="upsidedown" for="subject">S<span>ubject</span></label>
                     </div>
                 </div>
-                <div class="form-block message-block">
+                <div class="form-block message-block {{ ($errors->first('body')) ? 'error' : '' }}">
                     <div class="form-block-inside">
+                        <div class="error-message">{{ $errors->first('body') }}</div>
                         <label for="body">M<span>essage</span></label>
                         {!! Form::textarea('body', null, ['placeholder' => 'What do you have to say?']) !!}
                         <label class="upsidedown" for="body">M<span>essage</span></label>

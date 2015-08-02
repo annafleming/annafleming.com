@@ -14,7 +14,7 @@ trait FileManaging{
      */
     public function getFilePath($fieldName = 'image')
     {
-        return $this->filePublicPath . '/'. $this->$fieldName;
+        return $this->filePublicPath . $this->$fieldName;
     }
 
     /**

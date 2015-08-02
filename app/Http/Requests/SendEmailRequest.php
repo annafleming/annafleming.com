@@ -27,4 +27,13 @@ class SendEmailRequest extends Request {
         ];
 	}
 
+    public function messages()
+    {
+        return [
+            'email.required' => 'You missed me!',
+            'email.email' => 'Wrong email format!',
+            'body.required' => 'You missed me!',
+        ];
+    }
+
 }

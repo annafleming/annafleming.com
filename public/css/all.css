@@ -330,6 +330,8 @@ section.contact {
         border: 9px solid #6e9bba;
         padding: 0 2.15%;
         text-align: left; }
+        section.contact div.contact-body div.contact-form div.form-block.error {
+          border-color: #9a564e; }
         section.contact div.contact-body div.contact-form div.form-block label {
           font-size: 1em;
           line-height: 1em;
@@ -380,6 +382,13 @@ section.contact {
           width: 100%;
           height: 100%;
           position: relative; }
+          section.contact div.contact-body div.contact-form div.form-block div.form-block-inside div.error-message {
+            font-size: 0.387em;
+            color: #9a564e;
+            font-family: ProximaNovaSemibold;
+            position: absolute;
+            top: 0;
+            right: 0; }
     section.contact div.contact-body input.contact-submit {
       display: inline-block;
       background-color: #c06b62;
@@ -621,6 +630,22 @@ section.resume {
           font-family: ProximaNovaLight; }
         section.resume div.lower-block div.languages div.language-list div.language-block:first-child {
           margin-left: 0; }
+    section.resume div.lower-block div.download-block {
+      margin-top: 5em;
+      font-family: SerifGotic;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-align: center; }
+      section.resume div.lower-block div.download-block h3 {
+        font-family: SerifGoticBlack;
+        font-size: 1.33em;
+        margin-bottom: 0.5em; }
+      section.resume div.lower-block div.download-block p {
+        margin: 0; }
+      section.resume div.lower-block div.download-block img {
+        width: 3.88em;
+        height: auto;
+        margin-top: 1em; }
 
 @media (max-width: 1500px) {
   html body section.works div.works-list article {

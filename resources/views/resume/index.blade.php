@@ -54,9 +54,11 @@
                                 <div class="arrow"></div>
                                 <div class="inner-content">
                                     <h4>{{ $record->name }}</h4>
+
                                     <p class="timeline-desc">
                                         {{ $record->description }}
                                     </p>
+
                                     <p class="timeline-date">{{ $record->period }}</p>
                                 </div>
                             </div>
@@ -66,6 +68,7 @@
             @endif
             <div class="languages">
                 <h3>languages</h3>
+
                 <div class="language-list">
                     @if (!empty($languages))
                         @foreach($languages as $language)
@@ -77,6 +80,17 @@
                     @endif
                 </div>
             </div>
+
+            @if ($configs['resume'])
+                <div class="download-block">
+                    <h3>Download</h3>
+
+                    <p>FOR SCANNING PRoGRAMS</p>
+
+                    <p>AND THOSE WITH SIMPLER TASTES:</p>
+                    <a href="/cv/download"><img src="/images/docIcon.svg" alt="Document icon"/></a>
+                </div>
+            @endif
         </div>
     </section>
 @endsection
