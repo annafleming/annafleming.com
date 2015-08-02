@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "ProximaNovaThin";
+  src: url("fonts/ProximaNova-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: url("fonts/ProximaNova-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "ProximaNovaSemibold";
+  src: url("fonts/ProximaNova-Sbold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SerifGotic";
+  src: url("fonts/itc-serif-gothic-lt-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SerifGoticBlack";
+  src: url("fonts/itc-serif-gothic-lt-black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+html {
+  height: 100%;
+  font-family: ProximaNovaLight Helvetica sans-serif;
+  font-size: 24px; }
+  html body {
+    margin: 0;
+    color: #46515d;
+    background-color: #e1a850; }
+    html body p {
+      margin: 0; }
+    html body div.container div.upper {
+      position: relative;
+      background-color: #83b9dc;
+      text-align: center;
+      height: 7.73em;
+      font-size: 4.34em;
+      text-transform: uppercase;
+      font-family: SerifGoticBlack; }
+      html body div.container div.upper div.image-container {
+        height: 6.77em;
+        width: 100%;
+        position: absolute;
+        bottom: 0.337em;
+        right: 0;
+        text-align: center; }
+        html body div.container div.upper div.image-container img {
+          height: 100%;
+          width: auto; }
+      html body div.container div.upper h1 {
+        font-size: 1em;
+        position: absolute;
+        bottom: 1.4em;
+        right: 0;
+        padding: 0 0.6em;
+        opacity: 0.7; }
+    html body div.container div.lower {
+      background-color: #e1a850;
+      text-align: center;
+      font-size: 2.08em;
+      padding-bottom: 3em; }
+      html body div.container div.lower img {
+        width: 53%;
+        height: auto;
+        margin-bottom: 1.5em; }
+      html body div.container div.lower p {
+        font-family: ProximaNovaThin;
+        font-size: 1em; }
+
+@media (max-width: 1100px) {
+  html body div.container div.upper {
+    font-size: 3.5em; } }
+
+@media (max-width: 990px) {
+  html body div.container div.upper {
+    font-size: 3em; } }
+
+@media (max-width: 790px) {
+  html body div.container div.upper {
+    font-size: 2.5em; }
+  html body div.container div.lower {
+    font-size: 1.6em; } }
+
+@media (max-width: 665px) {
+  html body div.container div.upper {
+    font-size: 1.8em; }
+  html body div.container div.lower {
+    font-size: 1.3em; } }
+
+/*# sourceMappingURL=page503.css.map */
