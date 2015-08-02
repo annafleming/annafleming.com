@@ -41,3 +41,13 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('sitemap.xml', function(){
+    $sitemap = App::make("sitemap");
+    $sitemap->add(URL::to('/'), '2015-01-08T20:10:00+02:00', '1.0', 'monthly');
+    $sitemap->add(URL::to('works'), '2015-01-08T20:10:00+02:00', '0.9', 'monthly');
+    $sitemap->add(URL::to('cv'), '2015-01-08T20:10:00+02:00', '0.9', 'monthly');
+    $sitemap->add(URL::to('contact'), '2015-01-08T20:10:00+02:00', '0.8', 'yearly');
+    return $sitemap->render('xml');
+
+});
