@@ -73,6 +73,11 @@ class Skill extends Model {
         return $this->moveDown([['category_id', $this->category_id]]);
     }
 
+    /**
+     * Counts visible skills
+     *
+     * @return int
+     */
     static function countVisibleSkills()
     {
         return self::visible()->count();

@@ -13,10 +13,10 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::resource('contact', 'ContactController');
+Route::resource('contact', 'ContactController', array('only' => array('index', 'store')));
 
 Route::get('/cv/download', 'ResumeController@download');
-Route::resource('cv', 'ResumeController');
+Route::resource('cv', 'ResumeController', array('only' => array('index')));
 
 Route::resource('works', 'WorksController', array('except' => array('show')));
 Route::get('/works/manage', 'WorksController@manage');

@@ -48,12 +48,7 @@ class ConfigController extends Controller {
             'value' => 'required',
             'field_type' => 'required',
         ]);
-        $config = $this->config->fill($request->all());
-        if ($config->field_type == 'text')
-            $config->value = $request->input('value');
-        if ($file = $request->file('value'))
-            $config->manageFile($request->file('value'), 'value');
-        $config->save();
+        $this->config->fillConfig($request)->save();
         return redirect('config');
     }
 
@@ -83,13 +78,7 @@ class ConfigController extends Controller {
             'field_type' => 'required',
         ]);
         $config = $this->config->findOrFail($id);
-        $config->fill($request->all());
-
-        if ($config->field_type == 'text')
-            $config->value = $request->input('value');
-
-        $config->manageConfigFile($request->file('value'));
-        $config->update();
+        $config->fillConfig($request)->update();
         return redirect('config');
     }
 

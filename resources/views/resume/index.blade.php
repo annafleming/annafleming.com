@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+
     <section class="resume">
         <header>
             <div class="image-block">
@@ -22,13 +23,13 @@
         <div class="resume-body">
             <div class="v-line"></div>
             <div class="skills-block left">
-                @if (!empty($categories['left']))
-                    @include('resume.partials.skillList', ['categories' => $categories['left']])
+                @if ($block = array_shift($categories))
+                    @include('resume.partials.skillList', ['categories' => $block])
                 @endif
             </div>
             <div class="skills-block right">
-                @if (!empty($categories['right']))
-                    @include('resume.partials.skillList', ['categories' => $categories['right']])
+                @if ($block = array_shift($categories))
+                    @include('resume.partials.skillList', ['categories' => $block])
                 @endif
             </div>
         </div>

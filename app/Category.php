@@ -4,6 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Traits\SwapModelRows;
 use App\Traits\SetOrderValue;
 use App\Traits\ConditionManagement;
+use DB;
 
 class Category extends Model {
 
@@ -42,30 +43,28 @@ class Category extends Model {
         return $this->skills()->where('hidden', '0');
     }
 
+    /**
+     * Splits categories into two equal parts
+     *
+     * @return array
+     */
     static function splitInHalf()
     {
         $totalVisibleSkills = Skill::visible()->count();
         $all = self::visible()->get();
-        $splitted = ['right' => [], 'left' => []];
+        $splitted = [[],[]];
         $currentSkillsCount = 0;
-        $currentArray = [];
-        $changed = false;
+        $currentArray = &$splitted[0];
         foreach ($all as $category)
         {
             $skills = $category->visibleSkills()->count();
             array_push($currentArray, $category);
             $currentSkillsCount+=$skills;
-
-            if($currentSkillsCount > $totalVisibleSkills/2 && !$changed) {
-                $splitted['left'] = $currentArray;
-                $changed = true;
-                $currentArray = [];
+            if($currentSkillsCount > $totalVisibleSkills/2 && empty($splitted[1])) {
+                $currentArray = &$splitted[1];
             }
-
         }
-        $splitted['right'] = $currentArray;
         return $splitted;
-
     }
 
 
