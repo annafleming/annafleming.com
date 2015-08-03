@@ -36,10 +36,13 @@ html {
   html body {
     height: 100%;
     width: 100%;
-    font-size: 100%; }
+    font-size: 100%;
+    margin: 0; }
     html body h1, html body h2, html body h3, html body h4 {
       font-size: 1em;
       margin: 0; }
+    html body * {
+      box-sizing: border-box; }
     html body a {
       text-decoration: none; }
     html body .headerBlock {
@@ -51,7 +54,8 @@ html {
       position: relative;
       margin-top: -115px;
       height: 115px;
-      clear: both; }
+      clear: both;
+      overflow: hidden; }
     html body main {
       background-color: #e1a850;
       height: auto;
@@ -87,7 +91,6 @@ nav {
       text-decoration: underline; }
 
 article.slogan-block {
-  width: 100%;
   padding: 100px 6.4% 70px 5.8%;
   background: #83b9dc;
   background: repeating-linear-gradient(61deg, #7aacce, #83b9dc 50%); }
@@ -201,7 +204,6 @@ section.works {
         font-family: SerifGotic;
         font-size: 0.43em; }
   section.works div.works-list {
-    width: 100%;
     padding: 0 17% 170px 17%;
     text-align: justify; }
     section.works div.works-list:after {
@@ -221,7 +223,7 @@ section.works {
         top: -1em;
         left: 0;
         text-transform: lowercase;
-        font-size: 2em;
+        font-size: 1.8em;
         line-height: 1em;
         height: 1em;
         background-color: #6f9dbb;
@@ -237,42 +239,21 @@ section.works {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
         height: 100%;
         overflow-y: scroll;
         background-color: #9ac6e3;
         font-size: 0.9em;
         line-height: 1.2em;
-        padding: 30px 4.7%; }
+        padding: 1em 4.7%; }
 
 div#adminPanel {
+  font-family: ProximaNovaThin;
   font-size: 0.75em;
   position: absolute;
   top: 0px;
   left: 0px;
   padding: 10px;
   background-color: #83b9dc; }
-
-div.container-fluid {
-  padding-top: 20px; }
-
-div.adminBlock {
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px 0;
-  font-size: 0.75em; }
-  div.adminBlock h1 {
-    font-size: 2em;
-    margin: 20px 0; }
-  div.adminBlock table {
-    background-color: lightblue;
-    margin-top: 20px; }
-    div.adminBlock table th {
-      background-color: lightcoral; }
-    div.adminBlock table tr.category-skill {
-      background-color: #ffffff; }
-  div.adminBlock form {
-    background-color: lightblue; }
 
 section.contact {
   color: #34495e; }
@@ -485,7 +466,6 @@ section.resume {
     top: 0;
     right: 49.8%; }
   section.resume div.resume-body {
-    width: 100%;
     height: 100%;
     padding: 3.5em 17% 0 17%;
     position: relative; }
@@ -496,12 +476,12 @@ section.resume {
       font-size: 1.17em; }
       section.resume div.resume-body div.skills-block.left {
         text-align: right;
-        padding-right: 1em;
+        padding-right: 3%;
         width: 50%; }
       section.resume div.resume-body div.skills-block.right {
         text-align: left;
-        padding-left: 1em;
-        width: 48%; }
+        padding-left: 2%;
+        width: 46%; }
       section.resume div.resume-body div.skills-block h3 {
         font-size: 1.43em;
         text-transform: uppercase;
@@ -743,7 +723,9 @@ section.resume {
       width: 320px;
       height: 320px; }
   html body section.resume header {
-    font-size: 3em; } }
+    font-size: 3em; }
+  html body section.resume div.lower-block div.download-block {
+    font-size: 1.3em; } }
 
 @media (max-width: 790px) {
   html body section.works div.works-list {
@@ -829,10 +811,14 @@ section.resume {
     font-size: 2em; }
   html body section.resume div.chart-container {
     font-size: 15.08em; }
+  html body section.resume div.resume-body div.skills-block.right {
+    padding-left: 1%; }
   html body section.resume div.currently-learning-head {
     font-size: 1.5em; }
   html body section.resume div.lower-block div.work-history {
-    font-size: 0.8em; } }
+    font-size: 0.8em; }
+  html body section.resume div.lower-block div.download-block {
+    font-size: 1em; } }
 
 @media (max-width: 399px) {
   html body section.works div.works-list article {

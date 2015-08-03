@@ -14,11 +14,11 @@ html {
         width: 100%;
         font-size: 100%;
         margin: 0;
-        h1, h2, h3, h4{
+        h1, h2, h3, h4 {
             font-size: 1em;
             margin: 0;
         }
-        *{
+        * {
             box-sizing: border-box;
         }
         a {
@@ -47,39 +47,35 @@ html {
                 margin: 0;
             }
         }
-    }
-}
-
-@mixin app-max-width-665 {
-    .headerBlock{
-        text-align: center;
-        padding: 0;
-        height: $hfHeight * 1.5;
-        nav {
-            float: none;
-            text-align: center;
-            width: 100%;
-            margin-top: 5px;
+        div.container-fluid {
+            padding-top: 20px;
+        }
+        div.adminBlock {
+            width: 80%;
+            margin: 0 auto;
+            padding: 30px 0;
+            font-size: 0.75em;
+            h1 {
+                font-size: 2em;
+                margin: 20px 0;
+            }
+            table {
+                background-color: lightblue;
+                margin-top: 20px;
+                th {
+                    background-color: lightcoral;
+                }
+                tr.category-skill {
+                    background-color: #ffffff;
+                }
+            }
+            form {
+                background-color: lightblue;
+            }
         }
     }
-    footer.headerBlock {
-        margin-top: -$hfHeight*1.5;
-        height: $hfHeight*1.5;
-    }
-    main {
-        padding-bottom: $hfHeight*1.5;
-    }
 }
 
+@import "partials/adminPanel";
 @import "partials/nav";
 @import "partials/home";
-@import "partials/works";
-@import "partials/adminPanel";
-@import "partials/contact";
-@import "partials/resume";
-@import "partials/responsive";
-
-
-
-
-

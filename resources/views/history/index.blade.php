@@ -1,4 +1,4 @@
-@extends('app')
+@extends('admin')
 @section('content')
     <div class="adminBlock">
         <h1 class="page-heading">History managing</h1>

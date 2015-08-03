@@ -1,4 +1,5 @@
-@extends('app')
+@extends('admin')
+
 @section('content')
     <div class="adminBlock">
         <h1 class="page-heading">Config managing</h1>
