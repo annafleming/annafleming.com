@@ -1,32 +1,32 @@
 @font-face {
-  font-family: "ProximaNovaThin";
-  src: url("fonts/ProximaNova-Thin.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'ProximaNovaThin';
+  src: url("fonts/ProximaNovaThin/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaThin/ProximaNovaT-Thin.woff") format("woff"), url("fonts/ProximaNovaThin/ProximaNovaT-Thin.ttf") format("truetype"), url("fonts/ProximaNovaThin/ProximaNovaT-Thin.svg#ProximaNovaT-Thin") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: "ProximaNovaLight";
-  src: url("fonts/ProximaNova-Light.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'ProximaNovaLight';
+  src: url("fonts/ProximaNovaLight/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaLight/ProximaNova-Light.woff") format("woff"), url("fonts/ProximaNovaLight/ProximaNova-Light.ttf") format("truetype"), url("fonts/ProximaNovaLight/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: "ProximaNovaSemibold";
-  src: url("fonts/ProximaNova-Sbold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'ProximaNovaSemibold';
+  src: url("fonts/ProximaNovaSemibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNovaSemibold/ProximaNova-Semibold.woff") format("woff"), url("fonts/ProximaNovaSemibold/ProximaNova-Semibold.ttf") format("truetype"), url("fonts/ProximaNovaSemibold/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: "SerifGotic";
-  src: url("fonts/itc-serif-gothic-lt-regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'SerifGotic';
+  src: url("fonts/SerifGotic/SerifGothicLT.eot?#iefix") format("embedded-opentype"), url("fonts/SerifGotic/SerifGothicLT.woff") format("woff"), url("fonts/SerifGotic/SerifGothicLT.ttf") format("truetype"), url("fonts/SerifGotic/SerifGothicLT.svg#SerifGothicLT") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: "SerifGoticBlack";
-  src: url("fonts/itc-serif-gothic-lt-black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+  font-family: 'SerifGoticBlack';
+  src: url("fonts/SerifGoticBlack/SerifGothicLT-Black.eot?#iefix") format("embedded-opentype"), url("fonts/SerifGoticBlack/SerifGothicLT-Black.woff") format("woff"), url("fonts/SerifGoticBlack/SerifGothicLT-Black.ttf") format("truetype"), url("fonts/SerifGoticBlack/SerifGothicLT-Black.svg#SerifGothicLT-Black") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 html {
   position: relative;
