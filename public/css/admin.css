@@ -209,4 +209,39 @@ aside.about-me {
       font-size: 1.15em;
       line-height: 1.2em; }
 
+main {
+  background-color: #77a9ca !important; }
+
+div.error404-block {
+  height: 100%;
+  background-color: #77a9ca;
+  color: #46515d;
+  text-align: right;
+  font-size: 1.5em;
+  font-family: ProximaNovaLight;
+  padding: 3em 9%; }
+  div.error404-block h1 {
+    font-size: 2em;
+    font-family: SerifGoticBlack;
+    text-align: left;
+    margin: 0;
+    line-height: 1em; }
+  div.error404-block div.error-body {
+    padding: 0 2%; }
+    div.error404-block div.error-body img {
+      display: inline-block;
+      width: 47%;
+      vertical-align: bottom;
+      margin-top: -2em;
+      height: auto; }
+    div.error404-block div.error-body div.message {
+      display: inline-block;
+      width: 51%; }
+      div.error404-block div.error-body div.message p {
+        text-align: center;
+        margin: 0; }
+        div.error404-block div.error-body div.message p a {
+          color: #9a564e;
+          font-family: ProximaNovaSemibold; }
+
 /*# sourceMappingURL=admin.css.map */
