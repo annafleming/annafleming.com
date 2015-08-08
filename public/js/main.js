@@ -1,4 +1,9 @@
 (function() {
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
 
     $('div.work-head').on('click',function(e){
         var article = $(this).parent();
@@ -15,4 +20,13 @@
         });
     });
 
+
+    $.ajax({
+        type: 'post',
+        url: '/email/send',
+        success: function (response) {
+        },
+        error: function (error) {
+        }
+    });
 })();

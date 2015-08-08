@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@index');
 
 Route::resource('contact', 'ContactController', array('only' => array('index', 'store')));
+Route::post('/email/send', 'ContactController@send');
 
 Route::get('/cv/download', 'ResumeController@download');
 Route::resource('cv', 'ResumeController', array('only' => array('index')));

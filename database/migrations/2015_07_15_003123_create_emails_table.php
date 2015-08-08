@@ -18,6 +18,7 @@ class CreateEmailsTable extends Migration {
             $table->string('email', 255);
             $table->string('subject', 255);
             $table->text('body');
+            $table->tinyInteger('status');
 			$table->timestamps();
 		});
 	}

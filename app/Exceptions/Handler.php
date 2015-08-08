@@ -3,6 +3,7 @@
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 
 class Handler extends ExceptionHandler {
 
@@ -37,7 +38,7 @@ class Handler extends ExceptionHandler {
 	 */
 	public function render($request, Exception $e)
 	{
-        if($e instanceof NotFoundHttpException)
+        if($e instanceof NotFoundHttpException or $e instanceof MethodNotAllowedHttpException)
         {
             return response()->view('errors.404', [], 404);
         }

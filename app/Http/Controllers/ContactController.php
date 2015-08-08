@@ -31,13 +31,24 @@ class ContactController extends Controller {
     {
         $values = $emailRequest->all();
         if ($values['birthday'] === ''){
-            $email = Email::create($values);
-            Mail::queue('emails.contact',  $email->attributesToArray(), function ($message) use ($email) {
-                $message->to(env('MAIL_USERNAME'))->subject($email->subject)->replyTo($email->email);
-            });
+            Email::create($values);
             Flash::message('Your email has been sent. Thank you!');
         }
         return redirect('contact');
+    }
+
+    /**
+     * Sends emails
+     *
+     * @return Response
+     */
+    public function send()
+    {
+        $emails = Email::notSent()->get();
+        foreach($emails as $email)
+        {
+            $email->send();
+        }
     }
 
 }
