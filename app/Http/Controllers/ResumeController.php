@@ -38,6 +38,7 @@ class ResumeController extends Controller {
     public function download()
     {
         $configs = Config::getConfigs(['resume']);
+        var_dump($configs['resume']);
         if ($configs['resume'])
             return response()->download($configs['resume'], 'Resume.docx');
         else
