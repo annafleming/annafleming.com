@@ -146,7 +146,7 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 		'Laracasts\Flash\FlashServiceProvider',
-        'Roumen\Sitemap\SitemapServiceProvider'
+        'Roumen\Sitemap\SitemapServiceProvider',
 
 	],
 
