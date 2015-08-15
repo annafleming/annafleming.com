@@ -31,5 +31,6 @@
                 <p>Please come back in 30 minutes.</p>
             </div>
 		</div>
+        @include('partials.googleAnalytics')
 	</body>
 </html>

@@ -36,5 +36,6 @@
 
 	<!-- Scripts -->
     <script src="{{ asset('/js/all.js') }}"></script>
+    @include('partials.googleAnalytics')
 </body>
 </html>
