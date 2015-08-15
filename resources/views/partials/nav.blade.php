@@ -1,5 +1,5 @@
 <a href="/">
-     <img src="/images/{{ Request::is('/') ? 'logo': 'logo-pages'}}.svg">
+     <img src="/images/{{ Request::is('/') ? 'logo': 'logo-pages'}}.svg" alt="Logo">
 </a>
 <nav>
     <a href="/works" class="{{ Request::is('works') ? 'active' : '' }}">Works</a>
