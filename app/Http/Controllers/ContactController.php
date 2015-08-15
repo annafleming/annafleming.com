@@ -30,6 +30,7 @@ class ContactController extends Controller {
     public function store(SendEmailRequest $emailRequest)
     {
         $values = $emailRequest->all();
+        $values['status'] = 1;
         if ($values['birthday'] === ''){
             Email::create($values);
             Flash::message('Your email has been sent. Thank you!');

@@ -9,11 +9,8 @@
             <div class="slogan-text">
                 from php to palm,<br>an old-school jack of<br>trades is an unrivaled asset.
             </div>
-
         </div>
-        <div class="banner">
-            <img src="/images/cards.png" alt="Cards"/>
-        </div>
+        <img class="banner" src="/images/cards.svg" alt="Cards"/>
     </article>
     <aside class="about-me">
         <div class="about-me-head">

@@ -5,7 +5,7 @@ use Mail;
 
 class Email extends Model {
 
-    protected $fillable = ['email', 'subject', 'body'];
+    protected $fillable = ['email', 'subject', 'body', 'status'];
 
     /**
      * Select resources with status=1

@@ -20,6 +20,8 @@
                         {{ $work->description }}
                         <br/><br/>/role/<br/><br/>
                         {{ $work->my_role }}
+                        <br/><br/>
+                        Go to {!! link_to($work->link, $work->name) !!}
                     </div>
                 </article>
             @endforeach

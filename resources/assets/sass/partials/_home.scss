@@ -1,6 +1,7 @@
 article.slogan-block{
     padding: 100px 6.4% 70px 5.8%;
     background: #83b9dc;
+    width: 100%;
     background: repeating-linear-gradient(
                     61deg,
                     #7aacce,
@@ -8,6 +9,7 @@ article.slogan-block{
     );
     div.slogan {
         min-height: 100%;
+
         display: inline-block;
         vertical-align: top;
         width: 45%;
@@ -44,11 +46,12 @@ article.slogan-block{
             text-transform: uppercase;
         }
     }
-    div.banner{
+    img.banner{
         display: inline-block;
         vertical-align: top;
-        min-height: 100%;
+        //min-height: 100%;
         width: 53.78%;
+        height: auto;
         img{
             max-width: 100%;
         }
@@ -193,7 +196,7 @@ aside.about-me{
                 margin-bottom: 10px;
             }
         }
-        div.banner{
+        img.banner{
             width: 100%;
         }
     }
