@@ -5,8 +5,8 @@
 
     RewriteEngine On
 
-    RewriteCond %{HTTP_HOST} ^45\.55\.36\.14$
-    RewriteRule ^(.*)$ http://www.annaafleming.com/$1 [L,R=301]
+    #RewriteCond %{HTTP_HOST} ^45\.55\.36\.14$
+    #RewriteRule ^(.*)$ http://www.annaafleming.com/$1 [L,R=301]
 
     RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
     RewriteRule .* – [F,L]
