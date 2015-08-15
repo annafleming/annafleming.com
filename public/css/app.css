@@ -606,11 +606,9 @@ section.resume {
         margin-bottom: 1.6em; }
       section.resume div.lower-block div.languages div.language-list div.language-block {
         display: inline-block;
-        margin-left: 6.33%; }
+        margin: 0 3%; }
         section.resume div.lower-block div.languages div.language-list div.language-block h4 {
           font-family: ProximaNovaLight; }
-        section.resume div.lower-block div.languages div.language-list div.language-block:first-child {
-          margin-left: 0; }
     section.resume div.lower-block div.download-block {
       margin-top: 5em;
       font-family: SerifGotic;

@@ -42,7 +42,7 @@ Route::resource('config', 'ConfigController', array('except' => array('show')));
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+	//'password' => 'Auth\PasswordController',
 ]);
 
 Route::get('sitemap.xml', function(){

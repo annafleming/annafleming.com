@@ -23,7 +23,7 @@
                 <span>from Russia</span>
             </h2>
             <div class="about-me-map">
-                <img src="/images/map.png" alt="Map"/>
+                <img src="/images/map.svg" alt="Map"/>
             </div>
         </div>
         <div class="about-me-block">

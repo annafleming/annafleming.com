@@ -259,12 +259,9 @@ section.resume {
             div.language-list {
                 div.language-block {
                     display: inline-block;
-                    margin-left: 6.33%;
+                    margin: 0 3%;
                     h4 {
                         font-family: ProximaNovaLight;
-                    }
-                    &:first-child {
-                        margin-left: 0;
                     }
                 }
             }
