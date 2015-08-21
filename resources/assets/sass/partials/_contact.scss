@@ -33,6 +33,35 @@ section.contact{
         font-size: 3em;
         div.message-success{
             font-size: 0.33em;
+            div.alert{
+                padding: 15px;
+                margin-bottom: 20px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                font-family: ProximaNovaThin;
+                &.alert-info{
+                    color: #31708f;
+                    background-color: #d9edf7;
+                    border-color: #bce8f1;
+                    .close{
+                        position: relative;
+                        top: -2px;
+                        right: 0px;
+                        line-height: 20px;
+                        padding: 0;
+                        cursor: pointer;
+                        background: transparent;
+                        border: 0;
+                        float: right;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #000000;
+                        text-shadow: 0 1px 0 #ffffff;
+                        opacity: 0.2;
+
+                    }
+                }
+            }
         }
         h2{
             font-size: 1em;
