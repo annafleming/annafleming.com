@@ -9,4 +9,4 @@ Disallow: /skills
 Disallow: /laguages
 Disallow: /history
 
-Sitemap: http://portfolio.app/sitemap.xml
+Sitemap: http://www.annaflemingdev.com/sitemap.xml
