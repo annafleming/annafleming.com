@@ -28,6 +28,8 @@ section.works{
         }
     }
     div.works-list{
+        background-color: $backgroundColor;
+        background-color: inherit;
         padding: 0 17% 170px 17%;
         text-align: justify;
         &:after{

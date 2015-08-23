@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_responsive.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_responsive.scss">
+      <file leaf-file-name="_works.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_works.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53781515" vertical-offset="2430" max-vertical-offset="3025">
-              <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+            <state vertical-scroll-proportion="1.1764706" vertical-offset="50" max-vertical-offset="4050">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -89,8 +89,8 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_home.scss" />
         <option value="$PROJECT_DIR$/resources/views/works/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_works.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_responsive.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_works.scss" />
       </list>
     </option>
   </component>
@@ -1038,14 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33613446" vertical-offset="1125" max-vertical-offset="2450">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_home.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28739497" vertical-offset="5229" max-vertical-offset="7250">
@@ -1161,50 +1153,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_works.scss">
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_responsive.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.445378" vertical-offset="2550" max-vertical-offset="4000">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state vertical-scroll-proportion="4.6218486" vertical-offset="0" max-vertical-offset="3025">
+          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
           <folding>
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440366781000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440366842000" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/works/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7058824" vertical-offset="230" max-vertical-offset="1000">
+        <state vertical-scroll-proportion="1.092437" vertical-offset="0" max-vertical-offset="1000">
           <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding>
             <marker date="1440366582000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -1221,10 +1217,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_responsive.scss">
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53781515" vertical-offset="2430" max-vertical-offset="3025">
-          <caret line="110" column="13" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.25210086" vertical-offset="850" max-vertical-offset="2450">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="47" />
+          <folding>
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_works.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1764706" vertical-offset="50" max-vertical-offset="4050">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding />
         </state>
       </provider>
