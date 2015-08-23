@@ -60,11 +60,15 @@ html {
       background-color: #e1a850;
       height: auto;
       min-height: 100%;
-      padding-bottom: 115px;
+      margin-bottom: -115px;
       position: relative; }
       html body main label {
         font-weight: normal;
         margin: 0; }
+      html body main::after {
+        content: "";
+        display: block;
+        height: 115px; }
 
 nav {
   float: right;
@@ -145,7 +149,7 @@ article.home-block {
     font-size: 2.7em;
     line-height: 1.2em; }
     article.home-block.lower-block div.about-me {
-      margin: 15px auto 85px;
+      margin: 0px auto 85px;
       padding: 5%; }
       article.home-block.lower-block div.about-me div.about-me-head {
         margin-bottom: 2em;

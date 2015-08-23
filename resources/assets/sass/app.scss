@@ -41,11 +41,16 @@ html {
             background-color: $backgroundColor;
             height: auto;
             min-height: 100%;
-            padding-bottom: $hfHeight;
+            margin-bottom: -$hfHeight;
             position: relative;
             label{
                 font-weight: normal;
                 margin: 0;
+            }
+            &::after {
+                content: "";
+                display: block;
+                height: $hfHeight;
             }
         }
     }
