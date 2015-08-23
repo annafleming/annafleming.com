@@ -149,7 +149,7 @@ article.home-block {
     font-size: 2.7em;
     line-height: 1.2em; }
     article.home-block.lower-block div.about-me {
-      margin: 0px auto 85px;
+      margin: 0px auto;
       padding: 5%; }
       article.home-block.lower-block div.about-me div.about-me-head {
         margin-bottom: 2em;
