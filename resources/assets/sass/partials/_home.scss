@@ -1,220 +1,284 @@
-article.slogan-block{
-    padding: 100px 6.4% 70px 5.8%;
-    background: #83b9dc;
+article.home-block {
     width: 100%;
-    background: repeating-linear-gradient(
-                    61deg,
-                    #7aacce,
-                    #83b9dc 50%
-    );
-    div.slogan {
-        min-height: 100%;
-
-        display: inline-block;
-        vertical-align: top;
-        width: 45%;
-        color: #34495e;
-        div.slogan-head{
+    div.home-inner {
+        max-width: 1400px;
+        width: 100%;
+    }
+    &.higher-block {
+        background: #83b9dc;
+        background: repeating-linear-gradient(
+                        61deg,
+                        #7aacce,
+                        #83b9dc 50%
+        );
+        font-size: 1.25em;
+        div.slogan-block {
+            padding: 100px 5% 70px;
+            margin: 0 auto;
+            color: #34495e;
             text-transform: uppercase;
-            font-size: 2.5em;
             line-height: 1em;
-            font-family: SerifGotic;
-            em {
-                font-family: SerifGoticBlack;
-                font-size: 2em;
-                line-height: 0.8em;
-                font-style: normal;
-            }
-            div.sl-ln2{
-                margin-top: 0.8em;
-                margin-left: 5.5%;
-                div.p1, div.p2{
-                    display: inline-block;
-                    vertical-align: top;
+            div.slogan {
+                display: inline-block;
+                vertical-align: top;
+                width: 45%;
+                div.slogan-head {
+                    font-family: SerifGotic;
+                    font-size: 2em;
+                    em {
+                        font-family: SerifGoticBlack;
+                        font-style: normal;
+                        font-size: 2em;
+                        line-height: 0.8em;
+                    }
+                    div.sl-ln2 {
+                        margin-top: 0.8em;
+                        margin-left: 5.5%;
+                        white-space: nowrap;
+                        div.p1, div.p2 {
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                        div.p1 {
+                            margin-right: 0.5em;
+                        }
+                    }
                 }
-                div.p1{
-                    margin-right: 0.5em;
+                div.slogan-text {
+                    font-size: 1em;
+                    margin-left: 5.5%;
+                    margin-top: 1.75em;
+                    font-family: ProximaNovaLight;
                 }
             }
-        }
-        div.slogan-text {
-            margin-left: 5.5%;
-            margin-top: 1.75em;
-            font-size: 1.25em;
-            font-family: ProximaNovaLight;
-            line-height: 1em;
-            text-transform: uppercase;
+            img.banner {
+                display: inline-block;
+                vertical-align: top;
+                width: 53.78%;
+                height: auto;
+                img {
+                    max-width: 100%;
+                }
+            }
         }
     }
-    img.banner{
-        display: inline-block;
-        vertical-align: top;
-        //min-height: 100%;
-        width: 53.78%;
-        height: auto;
-        img{
-            max-width: 100%;
+
+    &.lower-block {
+        background-color: #e1a850;
+        width: 100%;
+        font-size: 2.7em;
+        line-height: 1.2em;
+        div.about-me {
+            margin: 15px auto 85px;
+            padding: 5%;
+            div.about-me-head {
+                margin-bottom: 2em;
+                position: relative;
+                width: 100%;
+                float: left;
+                h2 {
+
+                    font-family: SerifGotic;
+                    text-transform: uppercase;
+                    position: absolute;
+                    top: 1.6em;
+                    left: 0px;
+                    span {
+                        display: block;
+                    }
+                }
+                div.about-me-map {
+                    float: right;
+                    width: 60%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            div.about-me-block {
+                div.about-me-text {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 100%;
+                    font-family: ProximaNovaLight;
+                    font-size: 0.4em;
+                    img{
+                        width: 40%;
+                        float: left;
+                        margin: 0 1.4em 1.4em 0;
+                        height: auto;
+                    }
+                    h3 {
+                        margin: -0.5em 0 0.3em 0;
+                        font-size: 1.6em;
+                    }
+                    p {
+                        margin: 0;
+                        font-size: 1em;
+                        line-height: 1.2em;
+                        text-align: justify;
+                    }
+                }
+            }
         }
     }
 }
-aside.about-me{
-    margin: 15px auto 85px;
-    max-width: 970px;
-    padding: 5%;
-    background-color: #e1a850;
-    div.about-me-head{
-        margin-bottom: 115px;
-        position: relative;
-        width: 100%;
-        float: left;
-        h2 {
-            font-size: 2.5em;
-            line-height: 1.2em;
-            font-family: SerifGotic;
-            text-transform: uppercase;
-            position: absolute;
-            top: 83px;
-            left: 0px;
-            span {
-                display: block;
-            }
+@mixin home-min-width-1500 {
+    article.home-block {
+        div.home-inner {
+            width: 80%;
         }
-        div.about-me-map{
-            float: right;
-            width: 60%;
-            img{
-                width: 100%;
+    }
+}
+
+@mixin home-max-width-2500 {
+    article.home-block {
+        &.lower-block {
+            font-size: 3.2em;
+        }
+    }
+}
+
+@mixin home-max-width-1500 {
+    article.home-block {
+        div.home-inner {
+            width: 80%;
+        }
+        &.lower-block {
+            font-size: 2.8em;
+        }
+    }
+}
+
+@mixin home-max-width-1300 {
+    article.home-block {
+        div.home-inner {
+            width: 90%;
+        }
+        &.lower-block {
+            font-size: 2.7em;
+            div.about-me{
+                width: 80%;
             }
         }
     }
+}
 
-
-    div.about-me-block{
-        div.about-me-photo{
-            display: inline-block;
-            vertical-align: top;
-            text-align: center;
-            width: 40%;
-            margin-right: 3%;
-            img{
-                width: 100%;
-                max-width: 395px;
-            }
+@mixin home-max-width-1250 {
+    article.home-block {
+        div.home-inner {
+            width: 100%;
         }
-        div.about-me-text{
-            display: inline-block;
-            vertical-align: top;
-            width: 56%;
-            font-family: ProximaNovaLight;
-            h3{
-                margin: 0;
-                font-size: 1.6em;
-                margin-bottom: 0.3em;
+        &.lower-block {
+            font-size: 2.4em;
+            div.about-me{
+                width: 80%;
             }
-            p {
-                margin: 0;
-                font-size: 1.15em;
-                line-height: 1.2em;
-            }
-
         }
     }
 }
 
 @mixin home-max-width-1100 {
-    article.slogan-block {
-        div.slogan {
-            div.slogan-head {
-                font-size: 2em;
-            }
-            div.slogan-text {
-                font-size: 0.8em;
+    article.home-block {
+        &.higher-block {
+            div.slogan-block {
+                div.slogan {
+                    div.slogan-head {
+                        font-size: 1.8em;
+                    }
+                }
             }
         }
-    }
-    aside.about-me{
-        div.about-me-block {
-            font-size: 0.9em;
+        &.lower-block {
+            font-size: 2.1em;
         }
     }
 }
 
 @mixin home-max-width-990 {
-    aside.about-me{
-        div.about-me-block{
-            div.about-me-photo{
-                width: 100%;
-            }
-            div.about-me-text{
-                margin-top: 20px;
-                width: 100%;
-                h3{
-                    text-align: center;
-                }
-                p{
-                    text-align: justify;
-                }
-            }
+    article.home-block {
+        &.higher-block {
+            font-size: 1.1em;
+        }
+        &.lower-block {
+            font-size: 1.8em;
         }
     }
 }
 
 @mixin home-max-width-900 {
-    article.slogan-block {
-        div.slogan {
-            div.slogan-head {
-                font-size: 1.5em;
-            }
+    article.home-block {
+        &.higher-block {
+            font-size: 1em;
         }
-    }
-    aside.about-me{
-        div.about-me-head{
-            h2{
-                font-size: 2.2em;
-
-            }
+        &.lower-block {
+            font-size: 1.6em;
         }
     }
 }
 
 @mixin home-max-width-790 {
-    aside.about-me{
-        div.about-me-head{
-            h2{
-                font-size: 1.8em;
+    article.home-block {
+        &.higher-block {
+            font-size: 0.9em;
+        }
+        &.lower-block {
+            font-size: 1.4em;
+            div.about-me {
+                div.about-me-block {
+                    div.about-me-text {
+                        font-size: 0.6em;
+                    }
+                }
             }
         }
     }
 }
 
 @mixin home-max-width-665 {
-    article.slogan-block {
-        div.slogan {
-            width: 100%;
-            div.slogan-text {
-                float: right;
-                margin-bottom: 10px;
-            }
-        }
-        img.banner{
-            width: 100%;
-        }
-    }
-    aside.about-me{
-        div.about-me-head {
-            h2 {
-                position: static;
-                font-size: 1.2em;
-                text-align: center;
-                margin-bottom: 10px;
-                span {
-                    display: inline-block;
+    article.home-block {
+        &.higher-block {
+            div.slogan-block {
+                div.slogan {
+                    width: 100%;
+                    div.slogan-text {
+                        float: right;
+                        margin-bottom: 10px;
+                    }
+                }
+                img.banner {
+                    width: 100%;
                 }
             }
-            div.about-me-map {
-                float: none;
-                text-align: center;
-                width: 100%;
+        }
+        &.lower-block {
+            font-size: 1.2em;
+            div.about-me {
+                div.about-me-head {
+                    h2 {
+                        position: static;
+                        text-align: center;
+                        margin-bottom: 0.5em;
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                    div.about-me-map {
+                        float: none;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+                div.about-me-block {
+                    div.about-me-text {
+                        text-align: center;
+                        img{
+                            float: none;
+                            width: 80%;
+                        }
+                    }
+                }
             }
         }
     }

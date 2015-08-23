@@ -1,15 +1,34 @@
+@media (max-width: 2500px) {
+    html{
+        body{
+            @include home-max-width-2500;
+        }
+    }
+}
+
 @media (max-width: 1500px) {
     html{
         body{
+            @include home-max-width-1500;
             @include works-max-width-1500;
             @include contact-max-width-1500;
         }
     }
 }
 
+@media (max-width: 1300px) {
+    html{
+        body{
+            @include home-max-width-1300;
+        }
+    }
+}
+
+
 @media (max-width: 1250px) {
     html{
         body{
+            @include home-max-width-1250;
             @include works-max-width-1250;
             @include contact-max-width-1250;
         }
@@ -61,7 +80,7 @@
 @media (max-width: 790px) {
     html{
         body {
-            @include works-max-width-790;
+            @include home-max-width-790;
             @include works-max-width-790;
             @include resume-max-width-790;
             @include page404-max-width-790;
@@ -95,6 +114,7 @@
     html{
         body{
             @include works-min-width-1500;
+            @include home-min-width-1500;
         }
     }
 }
