@@ -1,5 +1,6 @@
 section.works{
     color: #34495e;
+    background-color: $backgroundColor;
     header{
         background: #83b9dc;
         background: repeating-linear-gradient(
@@ -28,8 +29,6 @@ section.works{
         }
     }
     div.works-list{
-        background-color: $backgroundColor;
-        background-color: inherit;
         padding: 0 17% 170px 17%;
         text-align: justify;
         &:after{

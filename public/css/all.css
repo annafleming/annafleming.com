@@ -190,7 +190,8 @@ article.home-block {
           text-align: justify; }
 
 section.works {
-  color: #34495e; }
+  color: #34495e;
+  background-color: #e1a850; }
   section.works header {
     background: #83b9dc;
     background: repeating-linear-gradient(62deg, #7aacce, #83b9dc 50%);
@@ -212,8 +213,6 @@ section.works {
         font-family: SerifGotic;
         font-size: 0.43em; }
   section.works div.works-list {
-    background-color: #e1a850;
-    background-color: inherit;
     padding: 0 17% 170px 17%;
     text-align: justify; }
     section.works div.works-list:after {
