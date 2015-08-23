@@ -238,23 +238,35 @@ section.works {
         width: 100%;
         text-align: center;
         cursor: pointer; }
-      section.works div.works-list article img {
-        display: block;
-        width: 100% !important;
-        height: auto !important; }
-      section.works div.works-list article div.work-info {
-        text-align: left;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        overflow-y: scroll;
-        background-color: #9ac6e3;
-        font-size: 0.9em;
-        line-height: 1.2em;
-        padding: 1em 4.7%; }
-        section.works div.works-list article div.work-info a {
-          color: #6f9dbb; }
+      section.works div.works-list article div.work-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%; }
+        section.works div.works-list article div.work-wrapper div.work-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+          section.works div.works-list article div.work-wrapper div.work-content img {
+            display: block;
+            width: 100% !important;
+            height: auto !important; }
+          section.works div.works-list article div.work-wrapper div.work-content div.work-info {
+            text-align: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
+            background-color: #9ac6e3;
+            font-size: 0.9em;
+            line-height: 1.2em;
+            padding: 1em 4.7%; }
+            section.works div.works-list article div.work-wrapper div.work-content div.work-info a {
+              color: #6f9dbb; }
 
 div#adminPanel {
   font-family: ProximaNovaThin;
@@ -702,9 +714,6 @@ div.error404-block {
     width: 80%; }
   html body article.home-block.lower-block {
     font-size: 2.7em; }
-  html body section.works div.works-list article {
-    width: 400px;
-    height: 400px; }
   html body section.contact div.contact-body {
     padding: 140px 10% 200px 10%; } }
 
@@ -723,20 +732,12 @@ div.error404-block {
     font-size: 2.2em; }
     html body article.home-block.lower-block div.about-me {
       width: 80%; }
-  html body section.works div.works-list article {
-    width: 370px;
-    height: 370px; }
   html body section.contact div.contact-body {
     padding: 100px 10% 150px 10%;
     font-size: 2.6em; }
   html body section.contact footer {
     font-size: 2.6em;
     margin-bottom: 150px; } }
-
-@media (max-width: 1150px) {
-  html body section.works div.works-list article {
-    width: 350px;
-    height: 350px; } }
 
 @media (max-width: 1100px) {
   html body article.home-block.higher-block div.slogan-block div.slogan div.slogan-head {
@@ -804,9 +805,6 @@ div.error404-block {
   html body section.works div.works-list {
     padding-left: 5%;
     padding-right: 5%; }
-    html body section.works div.works-list article {
-      width: 320px;
-      height: 320px; }
   html body section.resume header {
     font-size: 3em; }
   html body section.resume div.lower-block div.download-block {
@@ -822,9 +820,6 @@ div.error404-block {
   html body section.works div.works-list {
     padding-left: 4%;
     padding-right: 4%; }
-    html body section.works div.works-list article {
-      width: 300px;
-      height: 300px; }
   html body section.resume div.chart-container {
     font-size: 20.3em; }
   html body section.resume div.resume-body {
@@ -883,8 +878,7 @@ div.error404-block {
         width: 80%; }
   html body section.works div.works-list article {
     display: block;
-    width: 360px;
-    height: 360px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto; }
   html body section.contact div.contact-body {
@@ -918,12 +912,6 @@ div.error404-block {
     font-size: 0.9em; } }
 
 @media (max-width: 399px) {
-  html body section.works div.works-list article {
-    display: block;
-    width: 300px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto; }
   html body section.contact div.contact-body {
     font-size: 1.8em;
     text-align: center; }
@@ -947,9 +935,6 @@ div.error404-block {
     font-size: 0.7em; } }
 
 @media (min-width: 1500px) {
-  html body section.works div.works-list article {
-    width: 480px;
-    height: 480px; }
   html body article.home-block div.home-inner {
     width: 80%; } }
 

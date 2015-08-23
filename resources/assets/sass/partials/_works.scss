@@ -41,11 +41,9 @@ section.works{
             display: inline-block;
             vertical-align: top;
             width: 47%;
-
             font-family: ProximaNovaLight;
             color: #000000;
             position: relative;
-
             div.work-head{
                 position: absolute;
                 top: -1em;
@@ -59,59 +57,39 @@ section.works{
                 text-align: center;
                 cursor: pointer;
             }
-            img {
-                display: block;
-                width: 100% !important;
-                height: auto !important;
-            }
-            div.work-info{
-                text-align: left;
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                overflow-y: scroll;
-                background-color: #9ac6e3;
-                font-size: 0.9em;
-                line-height: 1.2em;
-                padding: 1em 4.7%;
-                a{
-                    color: #6f9dbb;
+            div.work-wrapper{
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+                padding-bottom: 100%;
+                div.work-content{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        display: block;
+                        width: 100% !important;
+                        height: auto !important;
+                    }
+                    div.work-info{
+                        text-align: left;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        overflow-y: scroll;
+                        background-color: #9ac6e3;
+                        font-size: 0.9em;
+                        line-height: 1.2em;
+                        padding: 1em 4.7%;
+                        a{
+                            color: #6f9dbb;
+                        }
+                    }
                 }
-            }
-
-        }
-    }
-}
-
-@mixin works-max-width-1500 {
-    section.works{
-        div.works-list{
-            article{
-                width: 400px;
-                height: 400px;
-            }
-        }
-    }
-}
-
-@mixin works-max-width-1250 {
-    section.works{
-        div.works-list{
-            article{
-                width: 370px;
-                height: 370px;
-            }
-        }
-    }
-}
-
-@mixin works-max-width-1150 {
-    section.works{
-        div.works-list{
-            article{
-                width: 350px;
-                height: 350px;
             }
         }
     }
@@ -149,10 +127,6 @@ section.works{
         div.works-list{
             padding-left: 5%;
             padding-right: 5%;
-            article{
-                width: 320px;
-                height: 320px;
-            }
         }
     }
 }
@@ -162,10 +136,6 @@ section.works{
         div.works-list{
             padding-left: 4%;
             padding-right: 4%;
-            article{
-                width: 300px;
-                height: 300px;
-            }
         }
     }
 }
@@ -175,35 +145,9 @@ section.works{
         div.works-list{
             article{
                 display: block;
-                width: 360px;
-                height: 360px;
+                width: 80%;
                 margin-left: auto;
                 margin-right: auto;
-            }
-        }
-    }
-}
-
-@mixin works-max-width-399 {
-    section.works{
-        div.works-list{
-            article{
-                display: block;
-                width: 300px;
-                height: 300px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    }
-}
-
-@mixin works-min-width-1500 {
-    section.works{
-        div.works-list{
-            article{
-                width: 480px;
-                height: 480px;
             }
         }
     }
