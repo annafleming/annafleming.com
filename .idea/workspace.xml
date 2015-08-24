@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_login.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_login.scss">
+      <file leaf-file-name="Work.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Work.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46218488" vertical-offset="0" max-vertical-offset="595">
-              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.7210084" vertical-offset="21" max-vertical-offset="675">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -86,11 +86,11 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_resume.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_contact.scss" />
         <option value="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
-        <option value="$PROJECT_DIR$/app/Work.php" />
         <option value="$PROJECT_DIR$/app/Category.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_login.scss" />
+        <option value="$PROJECT_DIR$/app/Work.php" />
       </list>
     </option>
   </component>
@@ -1506,19 +1506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Work.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46890756" vertical-offset="21" max-vertical-offset="675">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <marker date="1440386703000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1440386703000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1440386703000" expanded="true" signature="-1:-1" placeholder=" Select resources with hidden=0 ..." />
-            <marker date="1440386703000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6302521" vertical-offset="1025" max-vertical-offset="1850">
@@ -1596,6 +1583,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.46218488" vertical-offset="0" max-vertical-offset="595">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <marker date="1440387841000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387841000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387841000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7210084" vertical-offset="21" max-vertical-offset="675">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
           <folding />
         </state>
       </provider>

@@ -18,6 +18,6 @@ class Work extends Model {
      */
     public function scopeVisible($query)
     {
-        return $query->where('hidden', '=', 0)->orderBy('order', 'asc');
+        return $query->where('hidden', '=', 0);
     }
 }
