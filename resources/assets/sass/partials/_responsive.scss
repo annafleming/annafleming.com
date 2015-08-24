@@ -27,7 +27,6 @@
     html{
         body{
             @include home-max-width-1500;
-            @include contact-max-width-1500;
             @include works-max-width-1500;
         }
     }
@@ -99,6 +98,7 @@
             @include works-max-width-790;
             @include resume-max-width-790;
             @include page404-max-width-790;
+            @include contact-max-width-790;
         }
     }
 }
@@ -115,6 +115,14 @@
         }
     }
 }
+@media (max-width: 500px) {
+    html{
+        body {
+            @include contact-max-width-500;
+        }
+    }
+}
+
 @media (max-width: 399px) {
     html{
         body{
@@ -128,6 +136,8 @@
     html{
         body{
             @include home-min-width-1500;
+            @include page404-min-width-1500;
+            @include contact-min-width-1500;
         }
     }
 }

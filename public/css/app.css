@@ -303,9 +303,11 @@ section.contact {
         font-size: 0.43em;
         margin-right: -23px; }
   section.contact div.contact-body {
-    width: 100%;
-    padding: 200px 17% 200px 17%;
-    font-size: 3em; }
+    width: 80%;
+    margin: 0 auto;
+    padding: 200px 0;
+    font-size: 3em;
+    max-width: 1200px; }
     section.contact div.contact-body div.message-success {
       font-size: 0.33em; }
       section.contact div.contact-body div.message-success div.alert {
@@ -354,7 +356,7 @@ section.contact {
       position: relative; }
       section.contact div.contact-body div.contact-form div.form-block {
         width: 71.43%;
-        height: 8.68em;
+        height: 10em;
         background-color: #7aacce;
         border: 9px solid #6e9bba;
         padding: 0 2.15%;
@@ -676,37 +678,44 @@ section.resume {
         height: auto;
         margin-top: 1em; }
 
+main.spec {
+  background-color: #77a9ca; }
+
 div.error404-block {
-  height: 100%;
+  width: 100%;
   background-color: #77a9ca;
   color: #46515d;
-  text-align: right;
   font-size: 1.5em;
   font-family: ProximaNovaLight;
-  padding: 3em 9%; }
-  div.error404-block h1 {
-    font-size: 2em;
-    font-family: SerifGoticBlack;
-    text-align: left;
-    margin: 0;
-    line-height: 1em; }
-  div.error404-block div.error-body {
-    padding: 0 2%; }
-    div.error404-block div.error-body img {
-      display: inline-block;
-      width: 47%;
-      vertical-align: bottom;
-      margin-top: -2em;
-      height: auto; }
-    div.error404-block div.error-body div.message {
-      display: inline-block;
-      width: 51%; }
-      div.error404-block div.error-body div.message p {
-        text-align: center;
-        margin: 0; }
-        div.error404-block div.error-body div.message p a {
-          color: #9a564e;
-          font-family: ProximaNovaSemibold; }
+  padding: 3em 0; }
+  div.error404-block div.error404-inner {
+    text-align: right;
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto; }
+    div.error404-block div.error404-inner h1 {
+      font-size: 2em;
+      font-family: SerifGoticBlack;
+      text-align: left;
+      margin: 0;
+      line-height: 1em; }
+    div.error404-block div.error404-inner div.error-body {
+      padding: 0 2%; }
+      div.error404-block div.error404-inner div.error-body img {
+        display: inline-block;
+        width: 47%;
+        vertical-align: bottom;
+        margin-top: -2em;
+        height: auto; }
+      div.error404-block div.error404-inner div.error-body div.message {
+        display: inline-block;
+        width: 51%; }
+        div.error404-block div.error404-inner div.error-body div.message p {
+          text-align: center;
+          margin: 0; }
+          div.error404-block div.error404-inner div.error-body div.message p a {
+            color: #9a564e;
+            font-family: ProximaNovaSemibold; }
 
 div.container-fluid {
   font-size: 1.2em;
@@ -739,8 +748,6 @@ div.container-fluid {
     width: 80%; }
   html body article.home-block.lower-block {
     font-size: 2.7em; }
-  html body section.contact div.contact-body {
-    padding: 140px 10% 200px 10%; }
   html body section.works div.works-list article {
     width: 47%; } }
 
@@ -760,7 +767,6 @@ div.container-fluid {
     html body article.home-block.lower-block div.about-me {
       width: 80%; }
   html body section.contact div.contact-body {
-    padding: 100px 10% 150px 10%;
     font-size: 2.6em; }
   html body section.contact footer {
     font-size: 2.6em;
@@ -779,7 +785,7 @@ div.container-fluid {
   html body section.contact header {
     font-size: 5em; }
   html body section.contact div.contact-body {
-    padding: 80px 6% 100px 6%; }
+    width: 90%; }
   html body section.resume header {
     font-size: 5em; }
   html body section.resume div.chart-container {
@@ -790,7 +796,7 @@ div.container-fluid {
     font-size: 2.5em; }
   html body section.resume div.currently-learning-block {
     font-size: 1.3em; }
-  html body div.error404-block {
+  html body div.error404-block div.error404-inner {
     font-size: 1.3em; } }
 
 @media (max-width: 990px) {
@@ -813,13 +819,13 @@ div.container-fluid {
       width: 100%;
       text-align: center; }
     html body section.contact div.contact-body div.contact-form {
-      width: 70%; }
+      width: 65%; }
   html body section.contact footer {
     font-size: 2.2em;
     padding-bottom: 80px; }
   html body section.resume header {
     font-size: 4em; }
-  html body div.error404-block {
+  html body div.error404-block div.error404-inner {
     font-size: 1.1em; } }
 
 @media (max-width: 900px) {
@@ -859,10 +865,12 @@ div.container-fluid {
     font-size: 2em; }
   html body section.resume div.currently-learning-block {
     font-size: 1em; }
-  html body div.error404-block {
+  html body div.error404-block div.error404-inner {
     padding: 3em 4%; }
-    html body div.error404-block div.error-body img {
-      margin-top: -1em; } }
+    html body div.error404-block div.error404-inner div.error-body img {
+      margin-top: -1em; }
+  html body section.contact div.contact-body div.contact-form {
+    width: 75%; } }
 
 @media (max-width: 665px) {
   html body .headerBlock {
@@ -877,8 +885,6 @@ div.container-fluid {
   html body footer.headerBlock {
     margin-top: -172.5px;
     height: 172.5px; }
-  html body main {
-    padding-bottom: 172.5px; }
   html body article.home-block.higher-block div.slogan-block div.slogan {
     width: 100%; }
     html body article.home-block.higher-block div.slogan-block div.slogan div.slogan-text {
@@ -887,7 +893,8 @@ div.container-fluid {
   html body article.home-block.higher-block div.slogan-block img.banner {
     width: 100%; }
   html body article.home-block.lower-block {
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    padding-bottom: 100px; }
     html body article.home-block.lower-block div.about-me div.about-me-head h2 {
       position: static;
       text-align: center;
@@ -912,7 +919,7 @@ div.container-fluid {
     font-size: 2em;
     text-align: center; }
     html body section.contact div.contact-body div.contact-form {
-      width: 95%; }
+      width: 80%; }
       html body section.contact div.contact-body div.contact-form div.form-block {
         width: 78%; }
         html body section.contact div.contact-body div.contact-form div.form-block.subject-block {
@@ -935,8 +942,12 @@ div.container-fluid {
     font-size: 0.8em; }
   html body section.resume div.lower-block div.download-block {
     font-size: 1em; }
-  html body div.error404-block {
+  html body div.error404-block div.error404-inner {
     font-size: 0.9em; } }
+
+@media (max-width: 500px) {
+  html body section.contact div.contact-body div.contact-form {
+    width: 95%; } }
 
 @media (max-width: 399px) {
   html body section.contact div.contact-body {
@@ -958,7 +969,7 @@ div.container-fluid {
     font-size: 0.7em; }
   html body section.resume div.lower-block div.languages div.language-list div.language-block {
     display: block; }
-  html body div.error404-block {
+  html body div.error404-block div.error404-inner {
     font-size: 0.7em; } }
 
 @media (min-width: 1500px) {
