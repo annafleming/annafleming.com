@@ -137,7 +137,6 @@
         body{
             @include home-min-width-1500;
             @include page404-min-width-1500;
-            @include contact-min-width-1500;
         }
     }
 }
