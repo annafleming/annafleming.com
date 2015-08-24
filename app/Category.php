@@ -51,14 +51,14 @@ class Category extends Model {
      */
     static function splitInHalf()
     {
-        $totalVisibleSkills = Skill::visible()->count();
         $all = self::visible()->get();
+        $totalVisibleSkills = Skill::visible()->count() + count($all) * 4;
         $splitted = [[],[]];
         $currentSkillsCount = 0;
         $currentArray = &$splitted[0];
         foreach ($all as $category)
         {
-            $skills = $category->visibleSkills()->count();
+            $skills = $category->visibleSkills()->count() + 4;
             array_push($currentArray, $category);
             $currentSkillsCount+=$skills;
             if($currentSkillsCount > $totalVisibleSkills/2 && empty($splitted[1])) {
