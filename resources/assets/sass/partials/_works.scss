@@ -96,6 +96,44 @@ section.works{
     }
 }
 
+@mixin works-min-width-2500 {
+    section.works{
+        div.works-list{
+            article{
+                width: 24%;
+            }
+        }
+    }
+}
+@mixin works-max-width-2500{
+    section.works{
+        div.works-list{
+            article{
+                width: 27%;
+            }
+        }
+    }
+}
+@mixin works-max-width-2000{
+    section.works{
+        div.works-list{
+            article{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@mixin works-max-width-1500{
+    section.works{
+        div.works-list{
+            article{
+                width: 47%;
+            }
+        }
+    }
+}
+
 @mixin works-max-width-1100 {
     section.works{
         header{

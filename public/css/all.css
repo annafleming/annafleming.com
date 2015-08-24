@@ -720,9 +720,19 @@ div.container-fluid {
     font-family: SerifGotic;
     color: #34495e; }
 
+@media (min-width: 2500px) {
+  html body section.works div.works-list article {
+    width: 24%; } }
+
 @media (max-width: 2500px) {
   html body article.home-block.lower-block {
-    font-size: 3.2em; } }
+    font-size: 3.2em; }
+  html body section.works div.works-list article {
+    width: 27%; } }
+
+@media (max-width: 2000px) {
+  html body section.works div.works-list article {
+    width: 30%; } }
 
 @media (max-width: 1500px) {
   html body article.home-block div.home-inner {
@@ -730,7 +740,9 @@ div.container-fluid {
   html body article.home-block.lower-block {
     font-size: 2.7em; }
   html body section.contact div.contact-body {
-    padding: 140px 10% 200px 10%; } }
+    padding: 140px 10% 200px 10%; }
+  html body section.works div.works-list article {
+    width: 47%; } }
 
 @media (max-width: 1300px) {
   html body article.home-block div.home-inner {
