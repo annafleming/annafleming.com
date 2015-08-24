@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nav.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/partials/nav.blade.php">
+      <file leaf-file-name="Work.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Work.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21008404" vertical-offset="0" max-vertical-offset="595">
-              <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.7210084" vertical-offset="21" max-vertical-offset="675">
+              <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/categories/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/categories/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/history/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/history/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/history/index.blade.php" />
@@ -91,6 +89,8 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_resume.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_contact.scss" />
         <option value="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
+        <option value="$PROJECT_DIR$/app/Category.php" />
+        <option value="$PROJECT_DIR$/app/Work.php" />
       </list>
     </option>
   </component>
@@ -722,55 +722,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/admin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8285322" vertical-offset="1421" max-vertical-offset="2175">
-          <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/errors/404.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36873156" vertical-offset="0" max-vertical-offset="678">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Work.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36873156" vertical-offset="0" max-vertical-offset="678">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.40117994" vertical-offset="272" max-vertical-offset="950">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ConfigController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22123894" vertical-offset="0" max-vertical-offset="2625">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artisan">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5575221" vertical-offset="497" max-vertical-offset="1175">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7064897" vertical-offset="96" max-vertical-offset="800">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4971591" vertical-offset="0" max-vertical-offset="950">
@@ -1470,8 +1421,132 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partials/nav.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21008404" vertical-offset="0" max-vertical-offset="595">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.33613446" vertical-offset="0" max-vertical-offset="595">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1440367897000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440367897000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WorksController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2625">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1439579346000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Display a listing of the resource. ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Show the form for creating a new resource. ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Store a newly created resource in storage. ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Show the form for editing the specified resource. ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Update the specified resource in storage. ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Remove the specified resource from storage. ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="  Displays table of the resources for admin ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5462185" vertical-offset="125" max-vertical-offset="1850">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="72" />
+          <folding>
+            <marker date="1440386637000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder=" Select resources with hidden=0 ..." />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder=" Skills of the current category ..." />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder=" Visible Skills of the current category ..." />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder=" Splits categories into two equal parts ..." />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440386637000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/History.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.042016808" vertical-offset="25" max-vertical-offset="975">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1439579346000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Select resources with hidden=0 ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Return the total length of the period ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Language.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1439579346000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Select resources with hidden=0 ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/PracticalSkill.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="621">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1437241450000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1437241450000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Skill.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.394958" vertical-offset="830" max-vertical-offset="2200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1439579346000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Select resources with hidden=0 ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Sets order for the resource ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Category of the current skill ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" List of all the categories ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Swaps the current resource with the previous one ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Swaps the current resource with the next one ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder=" Counts visible skills ..." />
+            <marker date="1439579346000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7210084" vertical-offset="21" max-vertical-offset="675">
+          <caret line="20" column="72" selection-start-line="20" selection-start-column="72" selection-end-line="20" selection-end-column="72" />
           <folding />
         </state>
       </provider>
