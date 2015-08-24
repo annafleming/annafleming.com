@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Category.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Category.php">
+      <file leaf-file-name="_login.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_login.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6302521" vertical-offset="1025" max-vertical-offset="1850">
-              <caret line="60" column="61" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.46218488" vertical-offset="0" max-vertical-offset="595">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -40,8 +40,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/history/create.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/history/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/history/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/languages/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/languages/edit.blade.php" />
@@ -81,7 +79,6 @@
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_adminPanel.scss" />
         <option value="$PROJECT_DIR$/resources/views/home/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_home.scss" />
         <option value="$PROJECT_DIR$/resources/views/works/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_responsive.scss" />
@@ -91,6 +88,9 @@
         <option value="$PROJECT_DIR$/resources/views/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/app/Work.php" />
         <option value="$PROJECT_DIR$/app/Category.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_login.scss" />
       </list>
     </option>
   </component>
@@ -104,8 +104,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
-    <option name="y" value="37" />
+    <option name="x" value="118" />
+    <option name="y" value="85" />
     <option name="width" value="1012" />
     <option name="height" value="643" />
   </component>
@@ -328,6 +328,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="contact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portfolio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -665,7 +687,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="37" width="1012" height="643" extended-state="0" />
+    <frame x="118" y="85" width="1012" height="643" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -722,20 +744,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4971591" vertical-offset="0" max-vertical-offset="950">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5575221" vertical-offset="672" max-vertical-offset="1350">
-          <caret line="42" column="36" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_06_17_192124_add_hidden_to_works_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
@@ -1139,30 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25210086" vertical-offset="850" max-vertical-offset="2450">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="47" />
-          <folding>
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1440361417000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_works.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37815127" vertical-offset="0" max-vertical-offset="4025">
@@ -1539,6 +1523,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6302521" vertical-offset="1025" max-vertical-offset="1850">
           <caret line="60" column="61" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+          <folding>
+            <marker date="1440387377000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder=" Select resources with hidden=0 ..." />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder=" Skills of the current category ..." />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder=" Visible Skills of the current category ..." />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder=" Splits categories into two equal parts ..." />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387377000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49579832" vertical-offset="1855" max-vertical-offset="2475">
+          <caret line="86" column="23" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+          <folding>
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1440387602000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3277311" vertical-offset="1030" max-vertical-offset="1625">
+          <caret line="49" column="92" selection-start-line="49" selection-start-column="92" selection-end-line="49" selection-end-column="92" />
+          <folding>
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1440387730000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46218488" vertical-offset="0" max-vertical-offset="595">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
           <folding />
         </state>
       </provider>
