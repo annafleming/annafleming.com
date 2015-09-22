@@ -119,6 +119,7 @@
     html{
         body {
             @include contact-max-width-500;
+            @include page404-max-width-500;
         }
     }
 }
