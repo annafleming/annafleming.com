@@ -1,4 +1,4 @@
-@extends('appblue')
+@extends('app')
 
 @section('content')
     <div class="error404-block">
